@@ -1,57 +1,70 @@
-* {
+/* * {
     outline: 1px solid red;
-} 
+} */
 @font-face {
     font-family: kombatFont;
     src: url(../fonts/mkmyth.ttf);
 }
-body{
+
+body {
     font-family: kombatFont;
 }
 
+body .container-fluid,
+.container {
+    border: solid 5px;
+    ;
+}
+
 /******************************* MENU ********************************/
-#brandR{
+#brandR {
     font-size: xx-large;
 }
-#brandC{    
+
+#brandC {
     font-size: x-large;
 }
 
 /******************************* PRESENTATION ***********************/
-#initial{
+#initial {
     background-color: blue;
     padding-top: 8%;
     padding-bottom: 20%;
 }
-#presentation{
-    text-align: center; 
+
+#presentation {
+    text-align: center;
     font-size: 13vw;
     background-color: #DDF7E3;
     line-height: 85%;
     width: 52%;
     margin: 0 auto;
 }
+
 #presentation p {
     margin: 0;
 }
-#ragtime{
-    color:#EAE509;
+
+#ragtime {
+    color: #EAE509;
 }
 
-#company{
+#company {
     color: #8D6EC8;
 }
-#autors{
+
+#autors {
     text-align: right;
     font-size: 1.5vw;
     line-height: 85%;
 }
 
 /********************************* WELCOME *****************************/
-#welcome{
-   background-color: yellow;
-   padding: 1% 1% 2% 1%;
+#welcome {
+    background-color: yellow;
+    padding: 1% 1% 2% 1%;
 }
+
 #welcome .container-fluid {
     margin-top: 1%;
     margin-bottom: 1%;
@@ -59,11 +72,11 @@ body{
 }
 
 /****** About US *******/
-#aboutUs{
+#aboutUs {
     background-color: #BFACE2;
 }
 
-#logo{
+#aboutUs img {
     width: 15%;
     height: 30%;
     position: absolute;
@@ -75,53 +88,73 @@ body{
 
 /******* Founders *******/
 #founders {
-background-color: #C8DBBE;
+    background-color: #C8DBBE;
 }
 
-#founders img{
+#founders img {
     width: 40%;
     height: 90%;
     border-radius: 100%;
-    float:left;
+    float: left;
     margin-right: 2%;
     display: inline;
 }
 
 #founders p {
-   vertical-align:text-bottom; 
-   width: 57%;
-   float: right;
-  /*padding: 12% 8%;*/
-  /*margin: 5% auto 5% 40%;*/
+    vertical-align: text-bottom;
+    width: 57%;
+    float: right;
+    /*padding: 12% 8%;*/
+    /*margin: 5% auto 5% 40%;*/
 }
 
 /****** Dancers ******/
 
-#dancers{
-    text-align:center;
+#dancers {
+    text-align: center;
     background-color: #BFACE2;
-    height: 500px;
-    }
-    
+    padding: 2%;
+}
+
 #dancers img {
-    width:40%;
-    border-radius:100%;
+    width: 40%;
+    border-radius: 100%;
     display: inline;
-    }
+}
 
-    .carousel-inner{
-    }
-    .carousel-item{
-       
-    }
+.carousel-inner {}
 
-    /*.carousel-item{
+.carousel-item {}
+
+/*.carousel-item{
     height:350px;    
     padding:5% 20%;
     } */
 
+
+/****** FAQs ******/
+
+#faqs {
+    background-color: #C8DBBE;
+}
+
+/******************************** FINAL **********************************/
+/****** footer ******/
+#final{
+    padding: 1% 0;
+}
+
+#footer{
+    padding: 1% 0;
+}
+
+#footer .nav-link{
+    padding: 0 5px 0 0;
+}
+
+
 /******************************** COMMONS **********************************/
-.titles{
+.titles {
     font-size: 2vw;
     height: 50px;
     margin-bottom: 1%;
@@ -145,32 +178,28 @@ background-color: #C8DBBE;
 
 
 
-.container{
-width: 54%;
+.container {
+    width: 54%;
 }
 
-.companyName{
+.companyName {
     font-size: 40px;
 }
 
 
-.pictureMenu
-{
-   width: 50px;
-   height: 50px; 
+.pictureMenu {
+    width: 50px;
+    height: 50px;
 }
 
-.nav-item{
-padding: 0 4px;
+.nav-item {
+    padding: 0 4px;
 }
 
-#segunda
-{
-padding:1% 2%;
+#segunda {
+    padding: 1% 2%;
 }
 
-.feature-box{
-text-align:center;
+.feature-box {
+    text-align: center;
 }
-
-
