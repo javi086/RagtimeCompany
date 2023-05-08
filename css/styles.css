@@ -7,72 +7,80 @@
 }
 
 body {
-    font-family: kombatFont;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: black;
-}
-
-body .container-fluid,
-.container {
-   /* border: solid 5px;*/
    
 }
 
-/******************************* SUPERIOR ********************************/
+body #menu{
+    font-family: kombatFont;
+    src: url(../fonts/mkmyth.ttf);
+    background-color: black;
+}
+
+body  section{
+  margin: .5% 0;
+}
+
+/******************************* Menu ********************************/
 #menu{
     padding: 0;
-    /*position: fixed;*/
-}
-#brandR {
-    font-size:x-large;
 }
 
-#brandC {
-    font-size:large;
-}
 
 /******************************* PRESENTATION ***********************/
-#presentation {
+#presentacion {
     background-image: url("../images/ef3.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    border: solid 2px;
+    border-color: red;
     height: 100vh;
-    text-align: center;
 
 }
-#presentation img {
+
+#bienvenida{
+  
+}
+#bienvenida img {
     width: 55%;
     height: auto;
 }
 
 
+
 /********************************* CONOCENOS *****************************/
-#OpcionAcercaDeNosotros {
- /*Si modificas el padding aqui se ajustara al siguiente section*/
-   /* border: solid 5px;
-    padding: 1% 1% 2% 1%;*/
-    background-image: url("../images/ef2.avif");
-    background-position: center; /* Background image is centered vertically and horizontally at all times */ 
+#conocenos{
+    background-image: url("../images/ef5.jpg");
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;/* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
-    background-size: cover; /* The MOST important part, this is what makes the background image rescale based on the container’s size */
-    background-color: #464646; /* Set a background color that will be displayed while the background image is loading */
+    background-attachment: fixed;
+    background-size: cover;
     border: solid 5px;
-    border-color: red;
-    height: 100vh;
+    border-color: blue;
 }
 
-/*#OpcionAcercaDeNosotros.container-fluid {
-    margin-top: 1%;
-    margin-bottom: 1%;
-   
-}*/
+#opcionAcercaDeNosotros {
+    padding: 5% 7%;
+    border: solid 5px;
+    color: white;
+    height: 100%;
+}
 
+
+#opcionAcercaDeNosotros img{
+    border-radius: 100%;
+    width: 50%;
+    height: auto;
+    align-items: center;
+    margin-left: 5%;
+}
 
 /****** ABOUT US *******/
 #nosotros {
-    padding: 0 10% 10% 10%;
+    
     color: white;
    /*  border-color: gray;
     border-width: 1px;
@@ -82,14 +90,7 @@ body .container-fluid,
    
 }
 
-#nosotros img {
-    border-radius: 100%;
-    width: 25%;
-    height: auto;
-    float: left;
-    margin-left: 5%;
-    display: inline;
-}
+
 
 
 
