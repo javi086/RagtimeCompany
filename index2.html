@@ -27,70 +27,90 @@
 <!--Section - Superior (Nav Bar)-->
 <section id="superior">
     <div class="container-fluid" id="menu">
-        <div class="row">
-            <div class="col">
-                <!--Scroll Back to Button-->
-                <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
-                    <i class="fas fa-arrow-up"></i>
-                </button>
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
+        <div class="row bg-dark">
+            <div class="col-md-3">
+
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                        <a class="navbar-brand" href="#"> 
                             <h5 style="display: inline;">Ragtime </h5>
                             <h6 style="display: inline;">Company</h6>
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Conocenos</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#opcionAcercaDeNosotros">Acerca de
-                                                nosotros</a></li>
-                                        <li><a class="dropdown-item" href="#founders">Fundadores</a></li>
-                                        <li><a class="dropdown-item" href="#dancers">Bailarines</a></li>
-                                        <li><a class="dropdown-item" href="#faqs">FAQs</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Contactanos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Actividades</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Adquiere</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" role="button">Registrate</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" role="button">Login</a>
-                                </li>
-                            </ul>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+
+            </div>
+            <div class="col-md-4">
+             
+                    <div id="tips" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"
+                        data-bs-pause="hover">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"> <!--Debe haber un slide como primario/active siempre-->
+                                <b>Chachi tip 1.</b><br>
+                                <q>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</q>
+                            </div>
+                            <div class="carousel-item">
+                                <b>Chachi tip 2.</b><br>
+                                <q>sñdkdkañldkañdkñdkadas ldkadkd asñdlkasdkasdkañdkasñdkasdkasñdkasñdkas ñldkasñdlaskd.</q>
+                            </div>
+                            <div class="carousel-item">
+                                <b>Chachi tip 3.</b><br>
+                                <q>blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu.</q>
+                            </div>
                         </div>
                     </div>
-                </nav>
+                
             </div>
+        <div class="col-md-5">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">   
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Conocenos</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#seccion_conocenos">Acerca de
+                                        nosotros</a></li>
+                                <li><a class="dropdown-item" href="#seccion_fundadores">Los fundadores</a></li>
+                                <li><a class="dropdown-item" href="#dancers">Los bailarines</a></li>
+                                <li><a class="dropdown-item" href="#faqs">FAQs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Actividades</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Adquiere</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" role="button">Registrate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" role="button">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </div>
 </section>
 <!--Section - Presentation-->
-<section id="presentacion" class="d-flex align-items-center">
-    <div class="container-fluid" id="bienvenida" style="border: solid 2px white;">
+<section id="seccion_presentacion" class="secciones">
+    <div class="container-fluid">
         <div class="row">
             <div class="col text-center">
                 <img src="images/NombreCompania.png">
@@ -100,76 +120,64 @@
 </section>
 
     <!--Section - Conocenos-->
-<section id="conocenos">
-    <div class="container-fluid" id="opcionAcercaDeNosotros">
-        <div class="row">
-            <div class="col-md-12">
-                <h5>Conocenos</h5>
-                <h1 class="display-3">Acerca de nosotros.</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <img src="images/RagtimeCompany.png">
-                <div class="row">
-                   <p style=" text-align: center;">"El nombre nace del juego de palabras originado por el nombre de los fundadores Rodrigo Morales y Chachi del castillo, 
-                    en union con el genero musical RAGIME"</p>
-                </div>
-            </div>
-            <div class="col-md-6 ">
-               
-                 <h4 style="margin-bottom: 2%;">Subtitulo de la sección</h4>
-                   <p>
-                    1 2 3 4 5 6 7 8 9 10 A 1 2 3 4 5 6 7 8 9 10 B 1 2 3 4 5 6 7 8 9 10 C 1 2 3 4 5 6 7 8 9 10 D
-                    1 2 3 4 5 6 7 8 9 10 A 1 2 3 4 5 6 7 8 9 10 B 1 2 3 4 5 6 7 8 9 10 C 1 2 3 4 5 6 7 8 9 10 E
-                    1 2 3 4 5 6 7 8 9 10 F 1 2 3 4 5 6 7 8 9 10 Ñ 1 2 3 4 5 6 7 8 9 10 K 1 2 3 4 5 6 7 8 9 10 Z
-                   </p>
-                   <p>
-                    1 2 3 4 5 6 7 8 9 10 A 1 2 3 4 5 6 7 8 9 10 B 1 2 3 4 5 6 7 8 9 10 C 1 2 3 4 5 6 7 8 9 10 D
-                    1 2 3 4 5 6 7 8 9 10 A 1 2 3 4 5 6 7 8 9 10 B 1 2 3 4 5 6 7 8 9 10 C 1 2 3 4 5 6 7 8 9 10 E
-                    1 2 3 4 5 6 7 8 9 10 F 1 2 3 4 5 6 7 8 9 10 Ñ 1 2 3 4 5 6 7 8 9 10 K 1 2 3 4 5 6 7 8 9 10 Z
-                   </p>
-                   <p>
-                    1 2 3 4 5 6 7 8 9 10 A 1 2 3 4 5 6 7 8 9 10 B 1 2 3 4 5 6 7 8 9 10 C 1 2 3 4 5 6 7 8 9 10 D
-                    1 2 3 4 5 6 7 8 9 10 A 1 2 3 4 5 6 7 8 9 10 B 1 2 3 4 5 6 7 8 9 10 C 1 2 3 4 5 6 7 8 9 10 E
-                    1 2 3 4 5 6 7 8 9 10 F 1 2 3 4 5 6 7 8 9 10 Ñ 1 2 3 4 5 6 7 8 9 10 K 1 2 3 4 5 6 7 8 9 10 Z
-                   </p>
-                   <p>
-                    1 2 3 4 5 6 7 8 9 10 A 1 2 3 4 5 6 7 8 9 10 B 1 2 3 4 5 6 7 8 9 10 C 1 2 3 4 5 6 7 8 9 10 D
-                    1 2 3 4 5 6 7 8 9 10 A 1 2 3 4 5 6 7 8 9 10 B 1 2 3 4 5 6 7 8 9 10 C 1 2 3 4 5 6 7 8 9 10 E
-                    1 2 3 4 5 6 7 8 9 10 F 1 2 3 4 5 6 7 8 9 10 Ñ 1 2 3 4 5 6 7 8 9 10 K 1 2 3 4 5 6 7 8 9 10 Z
-                   </p>
-                   <p>
-                    1 2 3 4 5 6 7 8 9 10 A 1 2 3 4 5 6 7 8 9 10 B 1 2 3 4 5 6 7 8 9 10 C 1 2 3 4 5 6 7 8 9 10 D
-                    1 2 3 4 5 6 7 8 9 10 A 1 2 3 4 5 6 7 8 9 10 B 1 2 3 4 5 6 7 8 9 10 C 1 2 3 4 5 6 7 8 9 10 E
-                    1 2 3 4 5 6 7 8 9 10 F 1 2 3 4 5 6 7 8 9 10 Ñ 1 2 3 4 5 6 7 8 9 10 K 1 2 3 4 5 6 7 8 9 10 Z
-                   </p>
-                   <p>
-                    1 2 3 4 5 6 7 8 9 10 A 1 2 3 4 5 6 7 8 9 10 B 1 2 3 4 5 6 7 8 9 10 C 1 2 3 4 5 6 7 8 9 10 D
-                    1 2 3 4 5 6 7 8 9 10 A 1 2 3 4 5 6 7 8 9 10 B 1 2 3 4 5 6 7 8 9 10 C 1 2 3 4 5 6 7 8 9 10 E
-                    1 2 3 4 5 6 7 8 9 10 F 1 2 3 4 5 6 7 8 9 10 Ñ 1 2 3 4 5 6 7 8 9 10 K 1 2 3 4 5 6 7 8 9 10 Z
-                   </p>
-                   <p>
-                    1 2 3 4 5 6 7 8 9 10 A 1 2 3 4 5 6 7 8 9 10 B 1 2 3 4 5 6 7 8 9 10 C 1 2 3 4 5 6 7 8 9 10 D
-                    1 2 3 4 5 6 7 8 9 10 A 1 2 3 4 5 6 7 8 9 10 B 1 2 3 4 5 6 7 8 9 10 C 1 2 3 4 5 6 7 8 9 10 E
-                    1 2 3 4 5 6 7 8 9 10 F 1 2 3 4 5 6 7 8 9 10 Ñ 1 2 3 4 5 6 7 8 9 10 K 1 2 3 4 5 6 7 8 9 10 Z
-                   </p>
-                   <p>
-                    1 2 3 4 5 6 7 8 9 10 A 1 2 3 4 5 6 7 8 9 10 B 1 2 3 4 5 6 7 8 9 10 C 1 2 3 4 5 6 7 8 9 10 D
-                    1 2 3 4 5 6 7 8 9 10 A 1 2 3 4 5 6 7 8 9 10 B 1 2 3 4 5 6 7 8 9 10 C 1 2 3 4 5 6 7 8 9 10 E
-                    1 2 3 4 5 6 7 8 9 10 F 1 2 3 4 5 6 7 8 9 10 Ñ 1 2 3 4 5 6 7 8 9 10 K 1 2 3 4 5 6 7 8 9 10 Z
-                   </p>
-                
+<section id="seccion_conocenos" class="secciones">
+    <div class="container-fluid ">
+        <div class="row titulos_secciones">
+            <div class="col">
+                <p class="h1" style="line-height: 2%;">Conocenos</p>
+                <h1 class="display-1">Acerca de nosotros.</h1>
             </div>
         </div>
     </div>
 </section>
+
+<div class="container-fluid sub_secciones" id="opcionAcercaDeNosotros">
+    <div class="row">
+        <div class="col-md-12 subtitulos">
+            <h2>Acerca de la compañia.</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 text-center" >
+            <img src="images/RagtimeCompany.png">
+            <div class="row" style="padding: 0 15%;">
+                <q>El nombre nace del juego de palabras originado por el nombre de los fundadores Rodrigo Morales y Chachi
+                    del castillo, en union con el genero musical RAGIME.</q>
+                <p>
+            </div>
+        </div>
+        <div class="col-md-8" style="padding: 0 40% 0 0;">
+            <h3 class="subtitulos"> Ragtime Company.</h3>
+            <p>
+                Enfocada en la formación de artistica de diversas personas, con quehaceres distintos pero con el mismo
+                objetivo de aprender, crecer y compartir en este bello <em><b>Arte</b></em>.<br>
+                Unidos por la pasión y el compromiso.
+            </p>
+            <p>
+                Buscamos la exposición de nuestro trabajo en escenarios y espacios que nos reten a ser mejores. <br>
+                Nos interesa compartir nuestra <em><b>Danza</b></em> para trascender e inspirar a los demas.
+            </p>
+        </div>
+    </div>
+</div>
+
+ <!--Section - fundadores-->
+ <section id="seccion_fundadores" class="secciones">
+    <div class="container-fluid ">
+        <div class="row titulos_secciones">
+            <div class="col">
+                <p class="h1" style="line-height: 2%;">Conocenos</p>
+                <h1 class="display-1">Los fundadores.</h1>
+            </div>
+        </div>
+    </div>
+ </section>
+
 <!--<section id="OpcionFundadores">-->
-    <div class="container-fluid" id="founders">
-        <h1 class="titles">Fundadores.</h1>
+    <div class="container-fluid sub_secciones" id="fundadores">
+        <h1 class="subtitulos">Fundadores.</h1>
         <div class="row">
-            <div class="col-md-6">
-                <img src="images/chachi.png">
+            <div class="col-md-4">
                 <p>
                     Chachi del castillo.<br>
                     Fundadora de RagtimCompany.<br>
@@ -187,14 +195,16 @@
                     ES..... BUCAMOS LA EXPOSICIÓN DE .......
                 </p>
             </div>
-            <div class="col-md-6">
-                <img src="images/ro.png">
-                <p>
-                    Rodrigo kkkkkk<br>
-                    sdsffsdfsdffsdfsfdsfdsfdsfdsfds
-                    dasddadasdasddasdasdadasdasd
-                    asdasddasdasdsadsadsadsadas
-                    dasdasdasdasdsadasddasddsadasdasdasd
+            <div class="col-md-4 align-self-center text-center ">
+                <img src="images/fundadores.jpg">
+            </div>
+            <div class="col-md-4">
+                <p>RAGTIME ES UNA COMPAÑIA DE BAILE QUE SE FUNDÓ EN EL 2022. ESTA ENFOCADA EN....... NUESTRA MISIÓN
+                    ES..... BUCAMOS LA EXPOSICIÓN DE .......
+                    RAGTIME ES UNA COMPAÑIA DE BAILE QUE SE FUNDÓ EN EL 2022. ESTA ENFOCADA EN....... NUESTRA MISIÓN
+                    ES..... BUCAMOS LA EXPOSICIÓN DE .......
+                    RAGTIME ES UNA COMPAÑIA DE BAILE QUE SE FUNDÓ EN EL 2022. ESTA ENFOCADA EN....... NUESTRA MISIÓN
+                    ES..... BUCAMOS LA EXPOSICIÓN DE .......
                 </p>
             </div>
         </div>
@@ -305,24 +315,6 @@
         <div class="container-fluid"></div>
     </section>
     <Tips-->
-    <!--  <section id="tips">
-        <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover">
-            <div class="carousel-inner">
-                <div class="carousel-item active"> Debe haber un slide como primario/active siempre
-                    <h5>Chachi tip 1.</h5>
-                    <q>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</q>
-                </div>
-                <div class="carousel-item">
-                    <h5>Chachi tip 2.</h5>
-                    <q>ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble.</q>
-                </div>
-                <div class="carousel-item">
-                    <h5>Chachi tip 3.</h5>
-                    <q>blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu.</q>
-                </div>
-            </div>
-        </div>
-    </section>-->
     <!--Footer Section
     <section id="final">
         <div class="container" id="footer">
