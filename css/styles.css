@@ -1,0 +1,235 @@
+ @font-face {
+    font-family: kombatFont;
+    src: url(../fonts/mkmyth.ttf);
+}
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/wallpapers/general.jpg");
+    background-attachment: fixed;/* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
+   /* background-size: cover; /* The MOST important part, this is what makes the background image rescale based on the container’s size */
+    color:white;
+}
+
+ 
+ /******************************* MENU ********************************/
+ #main_header{
+    position: fixed;
+    margin: 0;
+    font-family: kombatFont;
+    src: url(../fonts/mkmyth.ttf);
+    border: solid yellow 2px;
+   
+   /* z-index: 1;*/
+ }
+
+ #ejemplo{
+    border: solid red 2px;
+ }
+#brand_name > *{
+    display: inline;
+ }
+ a:hover{
+    background-color:#66347F;
+ }
+ .dropdown-item:hover{
+    background-color:#EAE509;
+ }
+ 
+  /*---------Tips-------*/
+
+#tips{
+    text-align: center;
+    font-size: 15px;
+    color:white;
+    margin: 0;
+    padding: 15px 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ /******************************* SECCION PRESENTATION ***********************/
+ #seccion_presentacion {
+    background-image: url("../images/wallpapers/scenario.jpeg");
+
+ }
+ 
+ #seccion_presentacion img {
+     width: 55%;
+     height: auto;
+ }
+ 
+ 
+ 
+ /********************************* SECCION CONOCENOS *****************************/
+ #seccion_conocenos{
+     background-image: url("../images/wallpapers/ef6.jpg");
+    
+    
+ } 
+ /*---------OpcionAcercaDeNosotros-------*/ 
+ #opcionAcercaDeNosotros img{
+     border-radius: 100%;
+     width: 60%;
+     height: auto;
+     margin: 5% 0;
+ }
+ 
+  /*---------Fundadores-------*/
+#seccion_fundadores{
+    background-image: url("../images/wallpapers/ef3.jpg");
+    } 
+ 
+ #fundadores img {
+     width: 80%;
+     height: auto;
+     border-radius: 100%;
+     margin: 5% 0;
+ }
+
+ 
+ 
+ /*---------Bailarines-------*/
+ #seccion_bailarines{
+    background-image: url("../images/wallpapers/ef1.jpg");
+
+    } 
+
+ #bailarines {
+    text-align: center;
+ }
+ 
+ #bailarines img {
+     width: 40%;
+     border-radius: 100%;
+     display: inline;
+ }
+ #bailarines .col-md-4{
+    margin: 2% 0;
+ }
+ 
+ #bailarines .carousel-item{ 
+     padding:0% 10%;
+     } 
+ 
+ 
+ /****** FAQs ******/
+ 
+ 
+
+ /********************************* SECCION CONTACTANOS *****************************/
+ #seccion_contactanos{
+    background-image: url("../images/ef2.avif");
+    } 
+
+ /********************************* SECCION ACTIVIDADES *****************************/
+
+ #seccion_clases_abiertas{
+        background-image: url("../images/Fondos/clases_abiertas.jpeg");
+    } 
+ /*---------Clase de bachata-------*/
+
+#clases_abiertas img{
+width: 90%;
+height: auto;
+border-radius: 10%;
+}
+#clases_abiertas .hr{
+    margin: 4% 0;
+}
+
+
+ /*---------Entrenamiento Compañia-------*/
+#seccion_entrenamiento_compañia{
+    background-image: url("../images/compañia.jpg");
+}
+
+
+ /******************************** COMMONS **********************************/
+
+ .secciones{
+    align-items: center;
+    display: flex;
+    color: white;
+    font-family: kombatFont;
+    src: url(../fonts/mkmyth.ttf);
+    border: solid 3px blue;
+    height: 100vh;
+    background-position: center; /* Background image is centered vertically and horizontally at all times */ 
+    background-repeat: no-repeat;
+    background-attachment: fixed;/* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
+    background-size:cover; /* The MOST important part, this is what makes the background image rescale based on the container’s size */
+   
+}
+.sub_secciones{    
+        padding: 4% 5%;
+        line-height: 30px;
+}
+
+.titulos_secciones{
+    padding: 0 0 0 3%;
+}
+.subtitulos{
+    margin: 0 0 5% 0;
+}
+.decripcion{
+    padding: 0 20% 0 0; 
+    line-height: 40px
+}
+.informativo{
+    background-color: #F99B7D;
+    
+    width: 60%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: kombatFont;
+    src: url(../fonts/mkmyth.ttf);
+}
+ 
+ /*CLASSES SECTION*/
+ 
+ /*Este estilo ayuda a delimitar el ancho del navbar que contiene el nombre de la compañia, del lado superior izquierdo*/
+ /*.
+ #autors{
+     position: relative;
+     bottom: 260px;
+     margin-left: 250px;
+ }
+  position: relative;
+     bottom: 180px;
+ */
+ 
+ .companyName {
+     font-size: 40px;
+ }
+ 
+ 
+ .nav-item {
+     padding: 0 4px;
+ }
+ 
+ #segunda {
+     padding: 1% 2%;
+ }
+ 
+ .feature-box {
+     text-align: center;
+ }
+
+ #ubicacion{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
