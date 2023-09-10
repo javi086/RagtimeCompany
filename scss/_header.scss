@@ -3,12 +3,12 @@
     position: fixed;
     margin: 0;
     border: solid yellow 2px;
-    @extend %generalText;
+    @extend %general_text;
     
 
     
     #brand_name{
-        @extend %ragtimeText;
+        @extend %ragtime_font;
         h5, h6{
             display: inline;
            

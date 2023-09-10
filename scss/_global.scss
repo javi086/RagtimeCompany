@@ -10,7 +10,7 @@ $font-title: "Arial", "Helvetica", "sans-serif";
 /** placeholders */
 
 
-%generalText{
+%general_text{
    font-family: $font-title;
    color:$white;
 }
@@ -23,7 +23,7 @@ $font-title: "Arial", "Helvetica", "sans-serif";
 */
 
 
-%ragtimeText{
+%ragtime_font{
     @font-face {
         font-family: 'kombatFont';
         src: url(../fonts/mkmyth.ttf);
