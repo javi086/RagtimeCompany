@@ -1,0 +1,12 @@
+/** Colores variables */
+$white:#ffff;
+
+/** Fuentes */
+$font-title: "Alegreya", serif;
+
+/** placeholders */
+
+%base-title{
+    font-family: $font-title;
+    color:$white;
+}
