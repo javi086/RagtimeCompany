@@ -1,12 +1,33 @@
 /** Colores variables */
-$white:#ffff;
+$white:#fff;
+
 
 /** Fuentes */
-$font-title: "Alegreya", serif;
+$font-title: "Arial", "Helvetica", "sans-serif";
+
+
 
 /** placeholders */
 
-%base-title{
-    font-family: $font-title;
-    color:$white;
+
+%generalText{
+   font-family: $font-title;
+   color:$white;
+}
+
+/*
+1. Forma correcta de importar una fuente?
+2. Forma de aplicar un texto o color a todos los partials sin repetirlo en cada sección?
+3. Revisar como afectar el menu desplegable
+4. Poner una image default en le body para cuando no haya una especifica se muestre la de default
+*/
+
+
+%ragtimeText{
+    @font-face {
+        font-family: 'kombatFont';
+        src: url(../fonts/mkmyth.ttf);
+    }
+    font-family: 'kombatFont';
+    
 }

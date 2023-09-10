@@ -1,5 +1,33 @@
-header {
-  border: 3px solid red;
+@charset "UTF-8";
+#main_header {
+  position: fixed;
+  margin: 0;
+  border: solid yellow 2px;
+}
+#main_header #brand_name h5, #main_header #brand_name h6 {
+  display: inline;
+}
+
+/** Colores variables */
+/** Fuentes */
+/** placeholders */
+#main_header {
+  font-family: "Arial", "Helvetica", "sans-serif";
+  color: #fff;
+}
+
+/*
+1. Forma correcta de importar una fuente?
+2. Forma de aplicar un texto o color a todos los partials sin repetirlo en cada sección?
+3. Revisar como afectar el menu desplegable
+4. Poner una image default en le body para cuando no haya una especifica se muestre la de default
+*/
+#main_header #brand_name {
+  font-family: "kombatFont";
+}
+@font-face {
+  font-family: "kombatFont";
+  src: url(../fonts/mkmyth.ttf);
 }
 
 /*# sourceMappingURL=main.css.map */

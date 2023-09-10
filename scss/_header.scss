@@ -1,3 +1,20 @@
-header{
-    border: 3px solid red;
+
+#main_header{
+    position: fixed;
+    margin: 0;
+    border: solid yellow 2px;
+    @extend %generalText;
+    
+
+    
+    #brand_name{
+        @extend %ragtimeText;
+        h5, h6{
+            display: inline;
+           
+        }
+    }
+    
+
+        
 }
