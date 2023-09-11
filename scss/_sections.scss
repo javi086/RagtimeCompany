@@ -1,3 +1,17 @@
-#introduction_section{
- 
+ /******************************* Introdcution Section ***********************/
+#introduction_section {
+    background-image: url("../images/wallpapers/scenario.jpeg");
+
+   /* img {
+        width: 450px;
+        height: auto;
+       
+    }*/
 }
+
+
+ /******************************* Commons Section ***********************/
+.secciones{
+  @extend %sections_format;
+}
+

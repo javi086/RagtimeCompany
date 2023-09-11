@@ -31,3 +31,25 @@ $font-title: "Arial", "Helvetica", "sans-serif";
     font-family: 'kombatFont';
     
 }
+
+h1, h2, h3, h4, h5, h6{
+   @extend %ragtime_font;
+}
+
+%sections_format{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    @extend %ragtime_font;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    
+    img {
+        width: 450px;
+        height: auto;
+       
+    }
+}

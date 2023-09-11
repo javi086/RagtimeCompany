@@ -22,12 +22,39 @@
 3. Revisar como afectar el menu desplegable
 4. Poner una image default en le body para cuando no haya una especifica se muestre la de default
 */
-#main_header #brand_name {
+.secciones, h1, h2, h3, h4, h5, h6, #main_header #brand_name {
   font-family: "kombatFont";
 }
 @font-face {
   font-family: "kombatFont";
   src: url(../fonts/mkmyth.ttf);
 }
+
+.secciones {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.secciones img {
+  width: 450px;
+  height: auto;
+}
+
+/******************************* Introdcution Section ***********************/
+#introduction_section {
+  background-image: url("../images/wallpapers/scenario.jpeg");
+  /* img {
+       width: 450px;
+       height: auto;
+
+   }*/
+}
+
+/******************************* Commons Section ***********************/
 
 /*# sourceMappingURL=main.css.map */
