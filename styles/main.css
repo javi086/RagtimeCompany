@@ -8,6 +8,11 @@
   display: inline;
 }
 
+#footer_container {
+  border: green 5px solid;
+  background-color: #66347F;
+}
+
 /** Colores variables */
 /** Fuentes */
 /** placeholders */
@@ -48,6 +53,7 @@
 /******************************* Introdcution Section ***********************/
 #introduction_section {
   background-image: url("../images/wallpapers/scenario.jpeg");
+  border: 5px solid red;
   /* img {
        width: 450px;
        height: auto;
