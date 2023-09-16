@@ -2,21 +2,44 @@
 #main_header {
   position: fixed;
   margin: 0;
-  border: solid yellow 2px;
 }
 #main_header #brand_name h5, #main_header #brand_name h6 {
   display: inline;
 }
+#main_header nav a:hover {
+  background-color: #66347F;
+}
+#main_header nav .dropdown-item:hover {
+  background-color: #EAE509;
+}
+#main_header #tips {
+  font-size: 13px;
+  text-align: center;
+  margin: 0;
+  padding: 17px 0 0 0;
+}
 
-#footer_container {
+footer {
   border: green 5px solid;
   background-color: #66347F;
+}
+footer .container .footer_media {
+  margin: 10px 0;
+}
+footer #sub_footer {
+  background-color: rgb(80, 3, 80);
+  padding: 10px;
+}
+footer #sub_footer h5,
+footer #sub_footer h6 {
+  display: inline;
 }
 
 /** Colores variables */
 /** Fuentes */
+/** Quitando espacios*/
 /** placeholders */
-#main_header {
+#main_header, #main_header #tips {
   font-family: "Arial", "Helvetica", "sans-serif";
   color: #fff;
 }
@@ -27,7 +50,7 @@
 3. Revisar como afectar el menu desplegable
 4. Poner una image default en le body para cuando no haya una especifica se muestre la de default
 */
-.secciones, h1, h2, h3, h4, h5, h6, #main_header #brand_name {
+h1, h2, h3, h4, h5, h6, #main_header #brand_name {
   font-family: "kombatFont";
 }
 @font-face {
@@ -35,32 +58,87 @@
   src: url(../fonts/mkmyth.ttf);
 }
 
-.secciones {
+.sections {
   align-items: center;
-  text-align: center;
   display: flex;
+  color: white;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-.secciones img {
-  width: 450px;
+
+.section_titles {
+  padding: 0 0 0 50px;
+}
+
+/*
+$min_extra_large_devices:1200px;
+%img_extra_large_devices {
+    @media (min-width:$min_extra_large_devices) {
+            width: 50%;
+            height: auto;
+        }
+    }
+
+    $min_large_devices: 992px;
+    $min_large_devices: 1199px;
+
+    %img_large_devices {
+        @media (min-width: ($min_large_devices and $min_large_devices)) {
+            img{
+                width: 50%;
+                height: auto;
+            }
+
+        }
+    }
+$min_medium_devices:768px;
+$max_medium_devices:991px;
+    %img_medium_devices {
+        @media (min-width: ($min_medium_devices and $max_medium_devices)) {
+            img{
+                width: 50px;
+                height: auto;
+            }
+
+        }
+    }
+
+  */
+/******************************* Commons Section ***********************/
+/******************************* Introduction Section ***********************/
+#introduction_section {
+  background-image: url("../images/wallpapers/scenario4.jpeg");
+  border: 5px solid red;
+  text-align: center;
+  /*
+   img{
+    @extend %img_large_devices;
+   }
+   img{
+    @extend %img_medium_devices;
+   }*/
+  /** dispositivos grandes (desktops) 
+  @media (min-width: ($min_large_devices and $max_large_devices)) {
+      img{
+        width: 
+      }
+  }*/
+  /*
+  @extend %img_large_devices;
+  @extend %img_medium_devices;
+  */
+}
+#introduction_section img {
+  width: 40%;
   height: auto;
 }
 
-/******************************* Introdcution Section ***********************/
-#introduction_section {
-  background-image: url("../images/wallpapers/scenario.jpeg");
-  border: 5px solid red;
-  /* img {
-       width: 450px;
-       height: auto;
-
-   }*/
+/******************************* Introduction Section ***********************/
+#meetUs_section {
+  background-image: url("../images/wallpapers/ac4.jpeg");
 }
-
-/******************************* Commons Section ***********************/
 
 /*# sourceMappingURL=main.css.map */

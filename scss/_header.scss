@@ -2,7 +2,6 @@
 #main_header{
     position: fixed;
     margin: 0;
-    border: solid yellow 2px;
     @extend %general_text;
     
     
@@ -14,5 +13,21 @@
         }
     }
     
-        
+       nav{
+        a:hover{
+            background-color: #66347F;
+        }
+        .dropdown-item:hover{
+            background-color:#EAE509;
+         }
+       } 
+
+       #tips{
+        font-size: 13px;
+        text-align: center;
+        margin: 0;
+        padding: 17px 0 0 0;
+        @extend %general_text;
+       }
+
 }

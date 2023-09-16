@@ -1,18 +1,25 @@
 /** Colores variables */
-$white:#fff;
+$white: #fff;
 
 
 /** Fuentes */
 $font-title: "Arial", "Helvetica", "sans-serif";
 
+/** Quitando espacios*/
+$remove_marging:0 0 0 0;
+$remove_padding:0 0 0 0;
+
 
 
 /** placeholders */
+%general_text {
+    font-family: $font-title;
+    color: $white;
+}
 
-
-%general_text{
-   font-family: $font-title;
-   color:$white;
+%remove_space{
+    margin: 0;
+    padding: 0;
 }
 
 /*
@@ -23,33 +30,67 @@ $font-title: "Arial", "Helvetica", "sans-serif";
 */
 
 
-%ragtime_font{
+%ragtime_font {
     @font-face {
         font-family: 'kombatFont';
         src: url(../fonts/mkmyth.ttf);
     }
+
     font-family: 'kombatFont';
-    
+
 }
 
-h1, h2, h3, h4, h5, h6{
-   @extend %ragtime_font;
-}
-
-%sections_format{
-    align-items: center;
-    text-align: center;
-    display: flex;
+h1,h2,h3,h4,h5,h6
+{
     @extend %ragtime_font;
+}
+
+%sections_format {
+    align-items: center;
+    display: flex;
+    color:white;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size:cover;
-    
-    img {
-        width: 450px;
-        height: auto;
-       
-    }
+    background-size: cover;
+
+
 }
+%section_titles_format{
+    padding: 0 0 0 50px;
+}
+/*
+$min_extra_large_devices:1200px;
+%img_extra_large_devices {
+    @media (min-width:$min_extra_large_devices) {
+            width: 50%;
+            height: auto;
+        }
+    }
+
+    $min_large_devices: 992px;
+    $min_large_devices: 1199px;
+
+    %img_large_devices {
+        @media (min-width: ($min_large_devices and $min_large_devices)) {
+            img{
+                width: 50%;
+                height: auto;
+            }
+            
+        }
+    }
+$min_medium_devices:768px;
+$max_medium_devices:991px;
+    %img_medium_devices {
+        @media (min-width: ($min_medium_devices and $max_medium_devices)) {
+            img{
+                width: 50px;
+                height: auto;
+            }
+            
+        }
+    }
+
+  */

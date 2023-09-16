@@ -1,17 +1,47 @@
- /******************************* Introdcution Section ***********************/
-#introduction_section {
-    background-image: url("../images/wallpapers/scenario.jpeg");
-    border: 5px solid red;
-  
-   /* img {
-        width: 450px;
-        height: auto;
-       
-    }*/
-}
-
  /******************************* Commons Section ***********************/
-.secciones{
+ .sections{
   @extend %sections_format;
 }
+.section_titles{
+  @extend %section_titles_format;
+}
+ 
+ 
+ /******************************* Introduction Section ***********************/
+#introduction_section {
+    background-image: url("../images/wallpapers/scenario4.jpeg");
+    border: 5px solid red;
+    text-align: center;
+    
+img{
+  width: 40%;
+  height: auto;
+}
+/*
+ img{
+  @extend %img_large_devices;
+ }
+ img{
+  @extend %img_medium_devices;
+ }*/
 
+    /** dispositivos grandes (desktops) 
+@media (min-width: ($min_large_devices and $max_large_devices)) {
+    img{
+      width: 
+    }
+}*/
+
+/*
+@extend %img_large_devices;
+@extend %img_medium_devices;
+*/
+
+}
+
+
+ /******************************* Introduction Section ***********************/
+
+ #meetUs_section{
+  background-image: url("../images/wallpapers/ac4.jpeg");
+ }
