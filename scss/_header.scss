@@ -1,33 +1,35 @@
-
-#main_header{
+#main_header {
     position: fixed;
     margin: 0;
     @extend %general_text;
-    
-    
-    #brand_name{
+
+
+    #brand_name {
         @extend %ragtime_font;
-        h5, h6{
+
+        h5,
+        h6 {
             display: inline;
-           
+
         }
     }
-    
-       nav{
-        a:hover{
+
+    nav {
+        a:hover {
             background-color: #66347F;
         }
-        .dropdown-item:hover{
-            background-color:#EAE509;
-         }
-       } 
 
-       #tips{
+        .dropdown-item:hover {
+            background-color: #EAE509;
+        }
+    }
+
+    #tips {
         font-size: 13px;
         text-align: center;
         margin: 0;
         padding: 17px 0 0 0;
         @extend %general_text;
-       }
+    }
 
 }

@@ -1,47 +1,88 @@
  /******************************* Commons Section ***********************/
- .sections{
-  @extend %sections_format;
-}
-.section_titles{
-  @extend %section_titles_format;
-}
- 
- 
+ .sections {
+   @extend %sections_format;
+ }
+
+ .section_titles {
+   @extend %section_titles_format;
+ }
+
+
  /******************************* Introduction Section ***********************/
-#introduction_section {
-    background-image: url("../images/wallpapers/scenario4.jpeg");
-    border: 5px solid red;
+ #introduction_section {
+   background-image: url("../images/wallpapers/scenario4.jpeg");
+   border: 5px solid red;
+   text-align: center;
+
+   img {
+     width: 40%;
+     height: auto;
+   }
+
+ }
+
+  /***********************************************************************************************
+                                         Menu Conocenos 
+************************************************************************************************/
+
+ /******************************* MeetUs Section ***********************/
+
+ #meetUs_section {
+   background-image: url("../images/wallpapers/ac4.jpeg");
+
+ }
+
+ #aboutUs_option {
+   border: blue solid 3px;
+ }
+
+ #aboutUs_option {
+   img {
+     border-radius: 100%;
+     width: 60%;
+     height: auto;
+     margin: 5% 0;
+     border: salmon solid 5px;
+   }
+ }
+
+ /******************************* Founders Section ***********************/
+
+ #founders_section {
+   background-image: url("../images/wallpapers/ef3.jpg");
+ }
+
+
+ #founders {
+
+  H4{
+    text-decoration: underline;
+  }
+div{
+  text-align: center;
+   img {
+     width: 80%;
+     height: auto;
+     border-radius: 100%;
+     margin: 5% 0;
+   }
+  }
+ }
+/******************************* Dancers Section ***********************/
+ #dancers_section{
+  background-image: url("../images/wallpapers/ef1.jpg");
+
+  } 
+
+  #dancers{
     text-align: center;
-    
-img{
-  width: 40%;
-  height: auto;
-}
-/*
- img{
-  @extend %img_large_devices;
- }
- img{
-  @extend %img_medium_devices;
- }*/
-
-    /** dispositivos grandes (desktops) 
-@media (min-width: ($min_large_devices and $max_large_devices)) {
     img{
-      width: 
+      width: 40%;
+     border-radius: 100%;
+     display: inline;
     }
-}*/
-
-/*
-@extend %img_large_devices;
-@extend %img_medium_devices;
-*/
-
-}
-
-
- /******************************* Introduction Section ***********************/
-
- #meetUs_section{
-  background-image: url("../images/wallpapers/ac4.jpeg");
- }
+    .dancers_space{
+      margin: 5% 0;
+      border: red solid 2px;
+    }
+  }
