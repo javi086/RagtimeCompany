@@ -2,6 +2,7 @@
 #main_header {
   position: fixed;
   margin: 0;
+  z-index: 1;
 }
 #main_header #brand_name h5,
 #main_header #brand_name h6 {
@@ -84,7 +85,6 @@ h6, #main_header #brand_name {
 .sections {
   align-items: center;
   display: flex;
-  color: white;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -110,7 +110,9 @@ h6, #main_header #brand_name {
 3. Revisar como afectar el menu desplegable
 4. Poner una image default en le body para cuando no haya una especifica se muestre la de default
 */
-/**Media querys*/
+/***********************************************************************************************
+                                          Media querys
+************************************************************************************************/
 /** dispositivos extra grandes (monitores grandes, tvs) */
 @media (min-width: 1200px) {
   .section_titles h1 {
@@ -150,6 +152,10 @@ h6, #main_header #brand_name {
   .section_titles h2 {
     font-size: 20px;
   }
+  #dancers_section {
+    background-image: url("../images/wallpapers/dancers.jpeg");
+    background-size: 50%;
+  }
 }
 /** dispositivos pequeños en vista landscape (horizontal) */
 @media (min-width: 576px) and (max-width: 767px) {
@@ -159,6 +165,10 @@ h6, #main_header #brand_name {
   }
   .section_titles h2 {
     font-size: 20px;
+  }
+  #dancers_section {
+    background-image: url("../images/wallpapers/dancers.jpeg");
+    background-size: 50%;
   }
 }
 /******************************* Commons Section ***********************/
@@ -213,20 +223,35 @@ h6, #main_header #brand_name {
 
 /******************************* Dancers Section ***********************/
 #dancers_section {
-  background-image: url("../images/wallpapers/ef1.jpg");
+  background-image: url("../images/wallpapers/dancers.jpeg");
+  background-size: 100% 100%;
 }
 
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+  #dancers_section {
+    background-image: url("../images/wallpapers/dancers.jpeg");
+    background-size: 50%;
+  }
+}
 #dancers {
   text-align: center;
+  line-height: normal;
 }
 #dancers img {
-  width: 40%;
+  width: 200px;
+  height: auto;
   border-radius: 100%;
   display: inline;
+  margin: 10px 0;
 }
 #dancers .dancers_space {
-  margin: 5% 0;
-  border: red solid 2px;
+  margin: 25px 0;
+  padding: 30px 10px;
+  border: white solid 2px;
+}
+#dancers .carousel-item {
+  padding: 0% 10%;
 }
 
 /*# sourceMappingURL=main.css.map */

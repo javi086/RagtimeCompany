@@ -70,19 +70,38 @@ div{
  }
 /******************************* Dancers Section ***********************/
  #dancers_section{
-  background-image: url("../images/wallpapers/ef1.jpg");
+  background-image: url("../images/wallpapers/dancers.jpeg");
+  background-size:100% 100%;
 
   } 
-
+  $min_vr_sm_dv: 575px;
+  /** dispositivos móviles en vista viewport (vertical) */
+  @media (max-width: $min_vr_sm_dv) {
+  
+    #dancers_section{
+      background-image: url("../images/wallpapers/dancers.jpeg");
+      background-size: 50%;
+    
+      } 
+  }
   #dancers{
     text-align: center;
+    line-height: normal;
     img{
-      width: 40%;
-     border-radius: 100%;
-     display: inline;
+    width: 200px;
+    height: auto;
+    border-radius: 100%;
+    display: inline;
+    margin: 10px 0;
     }
     .dancers_space{
-      margin: 5% 0;
-      border: red solid 2px;
+      margin: 25px 0;
+      padding: 30px 10px;
+      border: white solid 2px;
     }
+
+    .carousel-item{ 
+      padding:0% 10%;
+      } 
+
   }

@@ -1,7 +1,8 @@
 #main_header {
-    position: fixed;
+    position:fixed;
     margin: 0;
     @extend %general_text;
+    z-index: 1;
 
 
     #brand_name {

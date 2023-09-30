@@ -10,6 +10,7 @@ $remove_padding: 0 0 0 0;
 /***********************************************************************************************
                                          Body in all pages
 ************************************************************************************************/
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
@@ -61,7 +62,6 @@ h6 {
 %sections_format {
   align-items: center;
   display: flex;
-  color: white;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,7 +86,10 @@ h6 {
 4. Poner una image default en le body para cuando no haya una especifica se muestre la de default
 */
 
-/**Media querys*/
+/***********************************************************************************************
+                                          Media querys
+************************************************************************************************/
+
 
 $min_ex_lg_dv: 1200px;
 /** dispositivos extra grandes (monitores grandes, tvs) */
@@ -145,6 +148,12 @@ $min_vr_sm_dv: 575px;
       font-size: 20px;
     }
   }
+
+  #dancers_section{
+    background-image: url("../images/wallpapers/dancers.jpeg");
+    background-size: 50%;
+  
+    } 
 }
 
 $min_hr_sm_dv: 576px;
@@ -160,4 +169,9 @@ $max_hr_sm_dv: 767px;
       font-size: 20px;
     }
   }
+  #dancers_section{
+    background-image: url("../images/wallpapers/dancers.jpeg");
+    background-size: 50%;
+  
+    } 
 }
