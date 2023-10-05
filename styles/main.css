@@ -75,6 +75,13 @@ h6, #main_header #brand_name {
 /***********************************************************************************************
                                             Titles & subtitles
 ************************************************************************************************/
+.section_titles {
+  padding: 0 0 0 5%;
+}
+.section_titles h2 {
+  line-height: 2px;
+}
+
 .subtitles {
   margin: 0 0 5% 0;
 }
@@ -86,21 +93,15 @@ h6, #main_header #brand_name {
   align-items: center;
   display: flex;
   height: 100vh;
+  width: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-}
-
-.section_titles {
-  padding: 0 0 0 5%;
-}
-.section_titles h2 {
-  line-height: 2px;
+  background-size: 99% 98%;
 }
 
 .subsections {
-  padding: 4% 5%;
+  padding: 5%;
   line-height: 30px;
 }
 
@@ -117,7 +118,6 @@ h6, #main_header #brand_name {
 @media (min-width: 1200px) {
   .section_titles h1 {
     font-size: 70px;
-    color: green;
   }
   .section_titles h2 {
     font-size: 40px;
@@ -127,7 +127,6 @@ h6, #main_header #brand_name {
 @media (min-width: 992px) and (max-width: 1199px) {
   .section_titles h1 {
     font-size: 70px;
-    color: yellow;
   }
   .section_titles h2 {
     font-size: 40px;
@@ -137,7 +136,6 @@ h6, #main_header #brand_name {
 @media (min-width: 768px) and (max-width: 991px) {
   .section_titles h1 {
     font-size: 50px;
-    color: red;
   }
   .section_titles h2 {
     font-size: 20px;
@@ -147,35 +145,24 @@ h6, #main_header #brand_name {
 @media (max-width: 575px) {
   .section_titles h1 {
     font-size: 35px;
-    color: blue;
   }
   .section_titles h2 {
     font-size: 20px;
-  }
-  #dancers_section {
-    background-image: url("../images/wallpapers/dancers.jpeg");
-    background-size: 50%;
   }
 }
 /** dispositivos pequeños en vista landscape (horizontal) */
 @media (min-width: 576px) and (max-width: 767px) {
   .section_titles h1 {
     font-size: 35px;
-    color: pink;
   }
   .section_titles h2 {
     font-size: 20px;
-  }
-  #dancers_section {
-    background-image: url("../images/wallpapers/dancers.jpeg");
-    background-size: 50%;
   }
 }
 /******************************* Commons Section ***********************/
 /******************************* Introduction Section ***********************/
 #introduction_section {
   background-image: url("../images/wallpapers/scenario4.jpeg");
-  border: 5px solid red;
   text-align: center;
 }
 #introduction_section img {
@@ -202,10 +189,16 @@ h6, #main_header #brand_name {
   margin: 5% 0;
   border: salmon solid 5px;
 }
+#aboutUs_option q {
+  padding: 0 15%;
+}
+#aboutUs_option h3, #aboutUs_option p {
+  padding: 0 50% 0 0;
+}
 
 /******************************* Founders Section ***********************/
 #founders_section {
-  background-image: url("../images/wallpapers/ef3.jpg");
+  background-image: url("../images/wallpapers/founders_section.jpeg");
 }
 
 #founders H4 {
@@ -223,17 +216,9 @@ h6, #main_header #brand_name {
 
 /******************************* Dancers Section ***********************/
 #dancers_section {
-  background-image: url("../images/wallpapers/dancers.jpeg");
-  background-size: 100% 100%;
+  background-image: url("../images/wallpapers/dancers_section.jpeg");
 }
 
-/** dispositivos móviles en vista viewport (vertical) */
-@media (max-width: 575px) {
-  #dancers_section {
-    background-image: url("../images/wallpapers/dancers.jpeg");
-    background-size: 50%;
-  }
-}
 #dancers {
   text-align: center;
   line-height: normal;
@@ -247,11 +232,19 @@ h6, #main_header #brand_name {
 }
 #dancers .dancers_space {
   margin: 25px 0;
-  padding: 30px 10px;
-  border: white solid 2px;
+  padding: 0;
+}
+#dancers .dancers_space div {
+  border: lightgray dashed 1px;
+  border-radius: 10px;
+  padding: 20px 5px;
 }
 #dancers .carousel-item {
   padding: 0% 10%;
 }
+
+/***********************************************************************************************
+                                         Menu Contactanos
+************************************************************************************************/
 
 /*# sourceMappingURL=main.css.map */

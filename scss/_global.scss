@@ -51,6 +51,13 @@ h6 {
   @extend %ragtime_font;
 }
 
+%section_titles_format {
+  padding: 0 0 0 5%;
+  h2 {
+    line-height: 2px;
+  }
+}
+
 .subtitles{
     margin: 0 0 5% 0;
 }
@@ -63,20 +70,16 @@ h6 {
   align-items: center;
   display: flex;
   height: 100vh;
+  width: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 99% 98%; //Jugando con la dimensión de la imagen con respecto a el contenerdor que ocupa height:100vh
 }
-%section_titles_format {
-  padding: 0 0 0 5%;
-  h2 {
-    line-height: 2px;
-  }
-}
-.subsections{
-    padding: 4% 5%;
-    line-height: 30px;
+
+%subsections_format{
+  padding:5%;
+  line-height: 30px;
 }
 
 /*
@@ -97,7 +100,6 @@ $min_ex_lg_dv: 1200px;
   %section_titles_format {
     h1 {
       font-size: 70px;
-      color: green;
     }
     h2 {
       font-size: 40px;
@@ -112,7 +114,6 @@ $max_lg_dv: 1199px;
   %section_titles_format {
     h1 {
       font-size: 70px;
-      color: yellow;
     }
     h2 {
       font-size: 40px;
@@ -128,7 +129,6 @@ $max_md_dv: 991px;
   %section_titles_format {
     h1 {
       font-size: 50px;
-      color: red;
     }
     h2 {
       font-size: 20px;
@@ -142,20 +142,13 @@ $min_vr_sm_dv: 575px;
   %section_titles_format {
     h1 {
       font-size: 35px;
-      color: blue;
     }
     h2 {
       font-size: 20px;
     }
   }
 
-  #dancers_section{
-    background-image: url("../images/wallpapers/dancers.jpeg");
-    background-size: 50%;
-  
-    } 
 }
-
 $min_hr_sm_dv: 576px;
 $max_hr_sm_dv: 767px;
 /** dispositivos pequeños en vista landscape (horizontal) */
@@ -163,15 +156,10 @@ $max_hr_sm_dv: 767px;
   %section_titles_format {
     h1 {
       font-size: 35px;
-      color: pink;
     }
     h2 {
       font-size: 20px;
     }
   }
-  #dancers_section{
-    background-image: url("../images/wallpapers/dancers.jpeg");
-    background-size: 50%;
-  
-    } 
+ 
 }
