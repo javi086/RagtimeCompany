@@ -113,3 +113,19 @@ div{
     /***********************************************************************************************
                                          Menu Contactanos
 ************************************************************************************************/
+#contact_section{
+  background-image: url(../images/wallpapers/scenario2.jpeg);
+}
+
+#location{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  
+}
+
+.responsive_iframe{
+ @extend %responsive-iframe;
+}
+
