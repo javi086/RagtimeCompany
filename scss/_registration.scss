@@ -1,0 +1,14 @@
+.ejemplo {
+    visibility: hidden;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+.ejemplo.show {
+    visibility: visible;
+}

@@ -19,7 +19,7 @@ function createUser({name, paternal_name, maternal_name, emial, message}) {
 
 function insertUserIntoTable(user){
     console.log("User into table");
-const table = document.getElementById("users_registerd").getElementsByTagName('tbody')[0];
+const table = document.getElementById("registerd_users").getElementsByTagName('tbody')[0];
 const row = table.insertRow();
 const name_cell = row.insertCell(0);
 const paternal_name_cell = row.insertCell(1);
@@ -53,7 +53,24 @@ class Users{
         this.maternal_name = maternal_name;
         this.email = email;
         this.message = message;
-    }
-
-    
+    }   
 }
+// Get tooltip elements
+var oculto = document.getElementById("oculto");
+// Function to show tooltip
+function showTooltip(ejemplo) {
+    ejemplo.classList.add("show");
+}
+
+// Function to hide tooltip
+function hideTooltip(ejemplo) {
+    ejemplo.classList.remove("show");
+}
+
+document.body.getElementById("message").onmouseover = function() {
+    showTooltip(oculto);
+};
+
+document.body.getElementById("message").onmouseout = function() {
+    hideTooltip(oculto);
+};

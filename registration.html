@@ -85,7 +85,7 @@
                                 <a class="nav-link" href="contact.html#contact" role="button">Contacto</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="registration.html" role="button">Registrate</a>
+                                <a class="nav-link" href="#" role="button">Registrate</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" role="button">Login</a>
@@ -103,87 +103,22 @@
         </div>
     </header>
 
-    <!--Section 3 - Contacto-->
-    <section id="contact_section" class="sections">
-        <div class="container-fluid ">
-            <div class="row section_titles">
-                <div class="col">
-                    <p class="h3" style="line-height: 2%;">Se parte de nuestro equipo.</p>
-                    <h1 class="display-1">Contactanos.</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="container subsections">
-        <div class="row">
-            <div class="col-md-12 subtitles">
-                <h2>Nos encantaría saber de ti.</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <p>Encuentranos en las siguiente redes sociales.</p>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-facebook-f"></i></a><i>Facebook</i> <br>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-twitter"></i></a><i>Twitter</i><br>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-instagram"></i></a><i>Instagram</i><bR>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-youtube"></i></a><i>Youtube</i><br> 
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-whatsapp"></i></a><i>Whatsapp</i><br>
-                <p>Telefono y correo electronico.</p>
-
-            </div>
-
             <div class="col-md-6">
                 Información de contacto.<br>
                 <label for="formGroupExampleInput" class="form-label" >Nombre(s):</label>
                 <input type="text" class="form-control" id="name">
+                <label for="formGroupExampleInput" class="form-label" >Apellido paterno:</label>
+                <input type="text" class="form-control" id="paternal_name">
+                <label for="formGroupExampleInput" class="form-label" >Apellido materno:</label>
+                <input type="text" class="form-control" id="maternal_name">
                 <label for="exampleFormControlInput1" class="form-label">Correo:</label>
                 <input type="email" class="form-control" id="email">
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
-                <textarea class="form-control" id="message" cols="6"></textarea>
+                <span class="ejemplo" id="oculto">Permitenos saber mas de ti, ¿Qué gusta?, ¿Que te apaciona?, ¿Qu'e te disgusta?, etc. </span>
+                <textarea class="form-control" id="message" rows="6"></textarea>
                 <button type="button"  onclick="getUserInformation()" class="btn btn-light" style="margin: 2% 0;">Submit</button>
             </div>
         </div>
-
-
-    <h2>Usuarios registrados</h2>
-    <table id="registered_users" style="border: solid 2px red;">
-        <thead >
-        <tr>
-            <th>Nombre</th>
-            <th>Apellido Paterno</th>
-            <th>Apellido Materno</th>
-            <th>Correo</th>
-            <th>Mensaje</th>
-        </tr>
-        </thead>
-        <tbody style="background-color: white; border: solid 1px red; color: red;">
-        <!-- Aquí se agregarán las filas de empleados -->
-        </tbody>
-    </table>
-
-
-
-        <div class="row" style="padding: 5%">
-            <div class="col">
-                <h2>Ubicación:</h2>
-                <p>Actualmente nuestras clases y ensayos se dan en el estudio de danza llamado "Bachata Team", ubicado en Cecilio Robelo 469, Jardín Balbuena, Venustiano Carranza,
-                    15900 Ciudad de
-                    México, CDMX</p>
-                <div class="container" id="location">
-                    <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15051.20153928054!2d-99.10529!3d19.4210289!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fffd73a0f0c7%3A0xffae17b863b060e7!2sBachata%20Team%20MX!5e0!3m2!1ses!2smx!4v1684728079312!5m2!1ses!2smx"
-                    class="responsive_iframe" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-
 
         <div class="container-fluid">
             

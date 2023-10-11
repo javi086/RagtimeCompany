@@ -266,4 +266,19 @@ h6, #main_header #brand_name {
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
+.ejemplo {
+  visibility: hidden;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+.ejemplo.show {
+  visibility: visible;
+}
+
 /*# sourceMappingURL=main.css.map */
