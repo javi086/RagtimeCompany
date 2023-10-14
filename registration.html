@@ -21,153 +21,132 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
-        <script type="text/javascript" src="./scripts/ragtime_scripts.js"> </script>
-
 </head>
 
 <body>
-    <header id="main_header" class="container-fluid col-md-12">
-        <div class="row bg-dark">
-            <div class="col-lg-3 col-md-3">
-                <nav class="navbar navbar-dark">
-                    <a class="navbar-brand" href="index.html" id="brand_name">
-                        <h5>Ragtime</h5>
-                        <h6>Company</h6>
-                    </a>
-                   
-                </nav>
+    <section id="registration_section" class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Formualrio de registro</h1>
             </div>
-            
-            <div class="col-lg-5 col-md-9">
-                <!--TIPS-->
-                <div id="tips" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"
-                    data-bs-pause="hover">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active"> <!--Debe haber un slide como primario/active siempre-->
-                            <p>"Esto sera una frase o pensamiento definidio por los couchs de la compañia, para mostrar al publico".....</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>"bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla".</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>"bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla".</p>
-                        </div>
+        </div>
+    </section>
+    <form>
+        <div class="container" id="registration_form">
+            <div class="row">
+                <label for="formGroupExampleInput" class="col-sm-2 col-form-label">Nombre(s):</label>
+                <div class="col-md-5">
+                    <input type="text" class="form-control general_shadow" id="name">
+                </div>
+            </div>
+            <div class="row">
+                <label for="formGroupExampleInput" class="col-sm-2 col-form-label">Apellido paterno:</label>
+                <div class="col-md-5">
+                    <input type="text" class="form-control general_shadow" id="paternal_name">
+                </div>
+            </div>
+            <div class="row">
+                <label for="formGroupExampleInput" class="col-sm-2 col-form-label">Apellido materno:</label>
+                <div class="col-md-5">
+                    <input type="text" class="form-control general_shadow" id="maternal_name">
+                </div>
+            </div>
+            <div class="row">
+                <label for="formGroupExampleInput" class="col-sm-2 col-form-label">Email:</label>
+                <div class="col-md-5">
+                    <input type="email" class="form-control general_shadow" id="email">
+                </div>
+            </div>
+            <fieldset class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Sexo:</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="woman_sex" value="option1"
+                            checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Mujer
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="man_sex" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                            Hombre
+                        </label>
                     </div>
                 </div>
-
-            </div>
-            <div class="col-lg-4 col-md-12">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <div class="collapse navbar-collapse " id="navbarNavDropdown">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">Conocenos</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="conocenos.html#meetUs_section">Acerca de
-                                            nosotros</a></li>
-                                    <li><a class="dropdown-item" href="conocenos.html#founders_section">Fundadores</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="conocenos.html#dancers_section">Bailarines</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">Actividades</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Clases abiertas.
-                                    <li><a class="dropdown-item" href="#">Entrenamiento compañia.</a></li>
-                                    <li><a class="dropdown-item" href="#">Eventos especiales</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html#contact" role="button">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" role="button">Registrate</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" role="button">Login</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                </nav>
-                
-            </div>
-        </div>
-    </header>
-
-            <div class="col-md-6">
-                Información de contacto.<br>
-                <label for="formGroupExampleInput" class="form-label" >Nombre(s):</label>
-                <input type="text" class="form-control" id="name">
-                <label for="formGroupExampleInput" class="form-label" >Apellido paterno:</label>
-                <input type="text" class="form-control" id="paternal_name">
-                <label for="formGroupExampleInput" class="form-label" >Apellido materno:</label>
-                <input type="text" class="form-control" id="maternal_name">
-                <label for="exampleFormControlInput1" class="form-label">Correo:</label>
-                <input type="email" class="form-control" id="email">
-                <label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
-                <span class="ejemplo" id="oculto">Permitenos saber mas de ti, ¿Qué gusta?, ¿Que te apaciona?, ¿Qu'e te disgusta?, etc. </span>
-                <textarea class="form-control" id="message" rows="6"></textarea>
-                <button type="button"  onclick="getUserInformation()" class="btn btn-light" style="margin: 2% 0;">Submit</button>
-            </div>
-        </div>
-
-        <div class="container-fluid">
-            
-            <footer class="text-center text-white ">
-                <!-- Grid container -->
-                <div class="container">
-                    <!-- Section: Social media -->
-                    <section class="footer_media">
-                        <!-- Facebook -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                                class="fab fa-facebook-f"></i></a>
-    
-                        <!-- Twitter -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                                class="fab fa-twitter"></i></a>
-    
-                        <!-- Instagram -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                                class="fab fa-instagram"></i></a>
-    
-                        <!-- Youtube -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                                class="fab fa-youtube"></i></a>
-                        
-                        <!-- Tiktok -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fab fa-tiktok"></i></a>
-    
-                           <!-- Gmail -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fab fa-google"></i></a>   
-    
-                        <!-- What's app -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                           class="fab fa-whatsapp"></i></a>
-                    </section>
-                    <!-- Section: Social media -->
+            </fieldset>
+            <div class="row">
+                <label for="formGroupExampleInput" class="col-sm-2 col-form-label">Mensaje:</label>
+                <div class="col-md-5">
+                    <textarea class="form-control general_shadow" id="message_area"></textarea>
                 </div>
-                <!-- Grid container -->
-    
-                <!-- Copyright -->
-                <div class="text-center" id="sub_footer">
-                    <h5>Ragtime </h5><h6>Company</h6>
-                </div>
-                <!-- Copyright -->
-            </footer>
 
-        </div>
+            </div>
+
+    </form>
+
+
+
+    <div class="col-md-6">
+
+
+        <span class="hidden_message_format" id="hidden_message" style="color: white">Permitenos saber mas de ti, ¿Qué
+            gusta?, ¿Que te apaciona?, ¿Qué te disgusta?, etc. </span>
+
+        <button type="button" onclick="getUserInformation()" class="btn btn-light" style="margin: 2% 0;">Submit</button>
     </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <footer class="text-center text-white ">
+            <!-- Grid container -->
+            <div class="container">
+                <!-- Section: Social media -->
+                <section class="footer_media">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-twitter"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-instagram"></i></a>
+
+                    <!-- Youtube -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-youtube"></i></a>
+
+                    <!-- Tiktok -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-tiktok"></i></a>
+
+                    <!-- Gmail -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-google"></i></a>
+
+                    <!-- What's app -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-whatsapp"></i></a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center" id="sub_footer">
+                <h5>Ragtime </h5>
+                <h6>Company</h6>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+    </div>
+    <script type="text/javascript" src="./scripts/ragtime_scripts.js"></script>
 </body>
 
 </html>

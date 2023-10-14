@@ -3,6 +3,8 @@
     margin: 0;
     @extend %general_text;
     z-index: 1;
+    top: 0;
+    bottom: 0;
 
 
     #brand_name {

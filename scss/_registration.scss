@@ -1,5 +1,23 @@
-.ejemplo {
-    visibility: hidden;
+#registration_form{
+    border: solid 2px yellow;
+    margin-top: 45px;
+
+    div{
+        margin-bottom: 8px;
+    }
+    #message_area{
+        height: 100px;
+    }
+}
+
+
+.general_shadow.shadow{
+    border: 5px solid salmon;
+}
+
+
+.hidden_message_format {
+    visibility: hidden; 
     background-color: #000;
     color: #fff;
     text-align: center;
@@ -9,6 +27,6 @@
     z-index: 1;
 }
 
-.ejemplo.show {
+.hidden_message_format.show_message {
     visibility: visible;
 }

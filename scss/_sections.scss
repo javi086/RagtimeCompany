@@ -34,9 +34,6 @@
 
  }
 
- #aboutUs_option {
-   border: blue solid 3px;
- }
 
  #aboutUs_option {
    img {
@@ -122,6 +119,7 @@ div{
     overflow: hidden;
     width: 100%;
     padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    border: solid 3px red;
   
 }
 
@@ -129,3 +127,11 @@ div{
  @extend %responsive-iframe;
 }
 
+
+    /***********************************************************************************************
+                                       Registration form
+************************************************************************************************/
+#registration_section{
+  border: solid 2px blueviolet;
+  margin-top: 100px;
+}

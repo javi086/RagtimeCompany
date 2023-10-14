@@ -55,22 +55,28 @@ class Users{
         this.message = message;
     }   
 }
-// Get tooltip elements
-var oculto = document.getElementById("oculto");
-// Function to show tooltip
-function showTooltip(ejemplo) {
-    ejemplo.classList.add("show");
+
+// TextArea hidden message
+let hiddenMessage = document.getElementById("hidden_message");
+let messageArea = document.getElementById("message_area");
+messageArea.addEventListener("mouseover",  () =>{
+    hiddenMessage.classList.add("show_message");
+})
+
+messageArea.addEventListener("mouseout", ()=>{
+    hiddenMessage.classList.remove("show_message");
+})
+
+//General hidden shadow for all elements
+
+let elements = document.getElementsByClassName("general_shadow");
+for(let i=0; i<=elements.length; i++){
+    elements[i].addEventListener("mouseover", ()=>{
+        elements[i].classList.add("shadow");
+    })
+    elements[i].addEventListener("mouseout", ()=>{
+        elements[i].classList.remove("shadow");
+    })
 }
 
-// Function to hide tooltip
-function hideTooltip(ejemplo) {
-    ejemplo.classList.remove("show");
-}
-
-document.body.getElementById("message").onmouseover = function() {
-    showTooltip(oculto);
-};
-
-document.body.getElementById("message").onmouseout = function() {
-    hideTooltip(oculto);
-};
+console.log("holaaa");
