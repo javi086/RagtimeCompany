@@ -33,43 +33,44 @@
     </section>
     <form>
         <div class="container" id="registration_form">
+           
             <div class="row">
-                <label for="formGroupExampleInput" class="col-sm-2 col-form-label">Nombre(s):</label>
+                <p><b class="mandatory_field">(*)</b> Campos mandatorios</p>
+                <label for="formGroupExampleInput" class="col-sm-2 col-form-label"><b class="mandatory_field">*</b> Nombre(s):</label>
                 <div class="col-md-5">
-                    <input type="text" class="form-control general_shadow" id="name">
+                    <input type="text" class="form-control general_shadow" id="name" name="mandatory_field">
                 </div>
             </div>
             <div class="row">
-                <label for="formGroupExampleInput" class="col-sm-2 col-form-label">Apellido paterno:</label>
+                <label for="formGroupExampleInput" class="col-sm-2 col-form-label"><b class="mandatory_field">*</b> Apellido paterno:</label>
                 <div class="col-md-5">
-                    <input type="text" class="form-control general_shadow" id="paternal_name">
+                    <input type="text" class="form-control general_shadow" id="paternal_name" name="mandatory_field">
                 </div>
             </div>
             <div class="row">
-                <label for="formGroupExampleInput" class="col-sm-2 col-form-label">Apellido materno:</label>
+                <label for="formGroupExampleInput" class="col-sm-2 col-form-label"><b class="mandatory_field">*</b> Apellido materno:</label>
                 <div class="col-md-5">
-                    <input type="text" class="form-control general_shadow" id="maternal_name">
+                    <input type="text" class="form-control general_shadow" id="maternal_name" name="mandatory_field">
                 </div>
             </div>
             <div class="row">
-                <label for="formGroupExampleInput" class="col-sm-2 col-form-label">Email:</label>
+                <label for="formGroupExampleInput" class="col-sm-2 col-form-label"><b class="mandatory_field">*</b> Email:</label>
                 <div class="col-md-5">
-                    <input type="email" class="form-control general_shadow" id="email">
+                    <input type="email" class="form-control general_shadow" id="email" name="mandatory_field">
                 </div>
             </div>
             <fieldset class="row">
                 <legend class="col-form-label col-sm-2 pt-0">Sexo:</legend>
                 <div class="col-sm-10">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="woman_sex" value="option1"
-                            checked>
-                        <label class="form-check-label" for="gridRadios1">
+                        <input class="form-check-input" type="radio" name="sex" value="M">
+                        <label class="form-check-label" for="female">
                             Mujer
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="man_sex" value="option2">
-                        <label class="form-check-label" for="gridRadios2">
+                        <input class="form-check-input" type="radio" name="sex"  value="H">
+                        <label class="form-check-label" for="male">
                             Hombre
                         </label>
                     </div>
@@ -85,20 +86,46 @@
 
     </form>
 
-
-
     <div class="col-md-6">
-
-
         <span class="hidden_message_format" id="hidden_message" style="color: white">Permitenos saber mas de ti, ¿Qué
             gusta?, ¿Que te apaciona?, ¿Qué te disgusta?, etc. </span>
-
         <button type="button" onclick="getUserInformation()" class="btn btn-light" style="margin: 2% 0;">Submit</button>
     </div>
     </div>
+<br>
+<div class="container-fluid" style="border: solid red 2px; width: 90%;">
+    <div class="row">
+        <div class="col">
+            <h4>Reporte de usuarios registrados</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-7">
+            <table class="table" id="registerd_users">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre(s)</th>
+                        <th scope="col">Apellido paterno</th>
+                        <th scope="col">Apellido materno</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Sexo</th>
+                        <th scope="col">Mensaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se agregarán las filas de empleados -->
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-3">
+            <p>adasddasd</p>
+        </div>
+    </div>
+</div>
+
+
 
     <div class="container-fluid">
-
         <footer class="text-center text-white ">
             <!-- Grid container -->
             <div class="container">

@@ -8,8 +8,15 @@
     #message_area{
         height: 100px;
     }
+
 }
 
+table, th, td {
+    border: 1px solid white;
+   text-align: center;
+    color: white;
+    
+  }
 
 .general_shadow.shadow{
     border: 5px solid salmon;
@@ -29,4 +36,7 @@
 
 .hidden_message_format.show_message {
     visibility: visible;
+}
+.mandatory_field{
+    color: $mandatory;
 }
