@@ -1,0 +1,137 @@
+ /******************************* Commons Section ***********************/
+ .sections {
+   @extend %sections_format;
+ }
+ .subsections{
+  @extend %subsections_format;
+ }
+
+ .section_titles {
+   @extend %section_titles_format;
+ }
+
+
+ /******************************* Introduction Section ***********************/
+ #introduction_section {
+   background-image: url("../images/wallpapers/scenario4.jpeg");
+   text-align: center;
+
+   img {
+     width: 40%;
+     height: auto;
+   }
+
+ }
+
+  /***********************************************************************************************
+                                         Menu Conocenos 
+************************************************************************************************/
+
+ /******************************* MeetUs Section ***********************/
+
+ #meetUs_section {
+   background-image: url("../images/wallpapers/ac4.jpeg");
+
+ }
+
+
+ #aboutUs_option {
+   img {
+     border-radius: 100%;
+     width: 60%;
+     height: auto;
+     margin: 5% 0;
+     border: salmon solid 5px;
+   }
+   q{
+    padding: 0 15%;
+   }
+   h3, p{
+    padding: 0 50% 0 0;
+   }
+ }
+
+ /******************************* Founders Section ***********************/
+
+ #founders_section {
+   background-image: url("../images/wallpapers/founders_section.jpeg");
+ }
+
+
+ #founders {
+
+  H4{
+    text-decoration: underline;
+  }
+div{
+  text-align: center;
+   img {
+     width: 80%;
+     height: auto;
+     border-radius: 100%;
+     margin: 5% 0;
+   }
+  }
+ }
+/******************************* Dancers Section ***********************/
+ #dancers_section{
+  background-image: url("../images/wallpapers/dancers_section.jpeg");
+
+  } 
+ 
+
+  #dancers{
+    text-align: center;
+    line-height: normal;
+    
+    img{
+    width: 200px;
+    height: auto;
+    border-radius: 100%;
+    display: inline;
+    margin: 10px 0;
+    }
+    .dancers_space{
+      margin: 25px 0;
+      padding: 0;
+      div{
+        border: lightgray dashed 1px;
+        border-radius: 10px;
+        padding: 20px 5px;
+      }
+    }
+
+    .carousel-item{ 
+      padding:0% 10%;
+      } 
+
+  }
+
+    /***********************************************************************************************
+                                         Menu Contactanos
+************************************************************************************************/
+#contact_section{
+  background-image: url(../images/wallpapers/scenario2.jpeg);
+}
+
+#location{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    border: solid 3px red;
+  
+}
+
+.responsive_iframe{
+ @extend %responsive-iframe;
+}
+
+
+    /***********************************************************************************************
+                                       Registration form
+************************************************************************************************/
+#registration_section{
+  border: solid 2px blueviolet;
+  margin-top: 100px;
+}

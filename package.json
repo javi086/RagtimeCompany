@@ -1,0 +1,26 @@
+{
+  "name": "ragtimecompany",
+  "version": "1.0.0",
+  "description": "Este es el repositorio para la creación del sitio web de la compania de baile RagtimeCompany. Este sitio contendra información relacionada con:     1.- Información de la compañia (Historia, fundadores, etc)     2.- Información sobre eventos/presentaciones.     3.- Información de miembros de la compañia.     4.- Información de clases.     5.- Etc.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss styles/main.css",
+    "watch": "sass --watch scss/main.scss styles/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javi086/RagtimeCompany.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javi086/RagtimeCompany/issues"
+  },
+  "homepage": "https://github.com/javi086/RagtimeCompany#readme",
+  "devDependencies": {
+    "sass": "^1.66.1"
+  },
+  "dependencies": {
+    "boostrap": "^2.0.0"
+  }
+}

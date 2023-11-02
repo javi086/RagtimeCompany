@@ -1,0 +1,176 @@
+/** Colores variables */
+$white: #fff;
+/** Fuentes */
+$font-title: "Arial", "Helvetica", "sans-serif";
+
+/**Mandatory field*/
+$mandatory: red;
+/** Quitando espacios*/
+$remove_marging: 0 0 0 0;
+$remove_padding: 0 0 0 0;
+/***********************************************************************************************
+                                         Body in all pages
+************************************************************************************************/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-image: url("../images/wallpapers/general.jpg");
+    background-attachment: fixed;/* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
+   /* background-size: cover; /* The MOST important part, this is what makes the background image rescale based on the container’s size */
+}
+/***********************************************************************************************
+                                         Placeholders
+************************************************************************************************/
+%general_text {
+  font-family: $font-title;
+  color: $white;
+}
+
+%remove_space {
+  margin: 0;
+  padding: 0;
+}
+
+%ragtime_font {
+  @font-face {
+    font-family: "kombatFont";
+    src: url(../fonts/mkmyth.ttf);
+  }
+  font-family: "kombatFont";
+}
+
+%responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/***********************************************************************************************
+                                            Titles & subtitles
+************************************************************************************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend %ragtime_font;
+}
+
+%section_titles_format {
+  padding: 0 0 0 5%;
+  h2 {
+    line-height: 2px;
+  }
+}
+
+.subtitles{
+    margin: 0 0 5% 0;
+}
+
+/***********************************************************************************************
+                                           Sections and subsections
+************************************************************************************************/
+
+%sections_format {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 99% 98%; //Jugando con la dimensión de la imagen con respecto a el contenerdor que ocupa height:100vh
+}
+
+%subsections_format{
+  padding:5%;
+  line-height: 30px;
+}
+
+/*
+1. Forma correcta de importar una fuente?
+2. Forma de aplicar un texto o color a todos los partials sin repetirlo en cada sección?
+3. Revisar como afectar el menu desplegable
+4. Poner una image default en le body para cuando no haya una especifica se muestre la de default
+*/
+
+/***********************************************************************************************
+                                          Media querys
+************************************************************************************************/
+
+
+$min_ex_lg_dv: 1200px;
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: $min_ex_lg_dv) {
+  %section_titles_format {
+    h1 {
+      font-size: 70px;
+    }
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
+
+$min_lg_dv: 992px;
+$max_lg_dv: 1199px;
+/** dispositivos grandes (desktops) */
+@media (min-width: $min_lg_dv) and (max-width: $max_lg_dv) {
+  %section_titles_format {
+    h1 {
+      font-size: 70px;
+    }
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
+
+$min_md_dv: 768px;
+$max_md_dv: 991px;
+
+/** dispositivos medianos (tablets) */
+@media (min-width: $min_md_dv) and (max-width: $max_md_dv) {
+  %section_titles_format {
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+}
+
+$min_vr_sm_dv: 575px;
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: $min_vr_sm_dv) {
+  %section_titles_format {
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+}
+$min_hr_sm_dv: 576px;
+$max_hr_sm_dv: 767px;
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: $min_hr_sm_dv) and (max-width: $max_hr_sm_dv) {
+  %section_titles_format {
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+ 
+}
