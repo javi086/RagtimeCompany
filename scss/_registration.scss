@@ -1,5 +1,5 @@
 #registration_form{
-    border: solid 2px yellow;
+    border: solid 2px white;
     margin-top: 45px;
 
     div{
@@ -25,13 +25,15 @@ table, th, td {
 
 .hidden_message_format {
     visibility: hidden; 
-    background-color: #000;
     color: #fff;
     text-align: center;
     border-radius: 5px;
     padding: 5px;
     position: absolute;
     z-index: 1;
+    background-color: palevioletred;
+    width: 200px;
+  
 }
 
 .hidden_message_format.show_message {
