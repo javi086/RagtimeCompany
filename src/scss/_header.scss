@@ -9,10 +9,10 @@
 
     #brand_name {
         @extend %ragtime_font;
-
         h5,
         h6 {
             display: inline;
+            color: gold;
 
         }
     }
