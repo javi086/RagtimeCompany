@@ -1,7 +1,7 @@
 import React from "react";
-import CompanyBrand from "./CompanyBrand";
-import Tips from "./Tips";
-import MainMenu from "./MainMenu";
+import CompanyBrand from "../components/CompanyBrand";
+import Tips from "../components/Tips";
+import MainMenu from "../components/MainMenu";
 
 function Header(){
     return(

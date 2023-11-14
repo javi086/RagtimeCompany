@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function MainMenu(){
     return (
@@ -7,34 +8,32 @@ function MainMenu(){
                   <div className="collapse navbar-collapse " id="navbarNavDropdown">
                       <ul className="navbar-nav ms-auto">
                           <li className="nav-item dropdown">
-                              <a className="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                  aria-expanded="false">Conocenos</a>
+                              <Link className="nav-link" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Conocenos</Link> 
                               <ul className="dropdown-menu">
-                                  <li><a className="dropdown-item" href="conocenos.html#meetUs_section">Acerca de
-                                          nosotros</a></li>
-                                  <li><a className="dropdown-item" href="conocenos.html#founders_section">Fundadores</a>
+                                  <li><Link className="dropdown-item" to="conocenos.html#meetUs_section">Acerca de
+                                          nosotros</Link> </li>
+                                  <li><Link className="dropdown-item" to="conocenos.html#founders_section">Fundadores</Link> 
                                   </li>
-                                  <li><a className="dropdown-item" href="conocenos.html#dancers_section">Bailarines</a>
+                                  <li><Link className="dropdown-item" to="conocenos.html#dancers_section">Bailarines</Link> 
                                   </li>
                               </ul>
                           </li>
                           <li className="nav-item dropdown">
-                              <a className="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                  aria-expanded="false">Actividades</a>
+                              <Link className="nav-link" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Actividades</Link> 
                               <ul className="dropdown-menu">
-                                  <li><a className="dropdown-item" href="#">Clases abiertas.</a></li>
-                                  <li><a className="dropdown-item" href="#">Entrenamiento compañia.</a></li>
-                                  <li><a className="dropdown-item" href="#">Eventos especiales.</a></li>
+                                  <li><Link className="dropdown-item" to="#">Clases abiertas.</Link> </li>
+                                  <li><Link className="dropdown-item" to="#">Entrenamiento compañia.</Link> </li>
+                                  <li><Link className="dropdown-item" to="#">Eventos especiales.</Link> </li>
                               </ul>
                           </li>
                           <li className="nav-item">
-                              <a className="nav-link" href="contact.html#contact" role="button">Contacto</a>
+                              <Link className="nav-link" to="/contact" role="button">Contacto</Link> 
                           </li>
                           <li className="nav-item">
-                              <a className="nav-link" href="registration.html" role="button">Registrate</a>
+                              <Link className="nav-link" to="/registration" role="button">Registrate</Link> 
                           </li>
                           <li className="nav-item">
-                              <a className="nav-link" href="#" role="button">Login</a>
+                              <Link className="nav-link" to="#" role="button">Login</Link> 
                           </li>
                       </ul>
                   </div>

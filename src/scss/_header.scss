@@ -1,10 +1,13 @@
 #main_header {
-    position:fixed;
+    position: fixed;
     margin: 0;
     @extend %general_text;
     z-index: 1;
     top: 0;
-    bottom: 0;
+    border: solid red 2px;
+    
+    
+
 
 
     #brand_name {

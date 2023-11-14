@@ -4,7 +4,7 @@
   margin: 0;
   z-index: 1;
   top: 0;
-  bottom: 0;
+  border: solid red 2px;
 }
 #main_header #brand_name h5,
 #main_header #brand_name h6 {
@@ -257,7 +257,7 @@ h6, #main_header #brand_name {
                                          Menu Contactanos
 ************************************************************************************************/
 #contact_section {
-  background-image: url(../images/wallpapers/scenario2.jpeg);
+  border: solide red 2px;
 }
 
 #location {
@@ -273,7 +273,6 @@ h6, #main_header #brand_name {
 ************************************************************************************************/
 #registration_section {
   border: solid 2px blueviolet;
-  margin-top: 100px;
 }
 
 #registration_form {

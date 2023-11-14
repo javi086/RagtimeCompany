@@ -1,17 +1,18 @@
-import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import React, { useState } from 'react'
+import './App.css'
 
-
-/**Lo que este en App se va a reflejar en el navegador*/
 function App() {
+  const [title, setTitle] = useState('');
 
   return (
     <>
-    <Header></Header>
-    <Footer></Footer>
+      <h1>{title}</h1>
+      <input
+        placeholder='title'
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}/>
     </>
   )
 }
 
-export default App  
+export default App
