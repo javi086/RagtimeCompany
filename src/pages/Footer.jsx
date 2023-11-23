@@ -1,39 +1,40 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer(){
     return(
-<footer className="text-center text-white ">
+<footer className="text-center text-white" data-testid="footer">
         {/* Grid container */}
         <div className="container">
             {/* Section: Social media */}
             <section className="footer_media">
                 {/* Facebook */}
-                <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        className="fab fa-facebook-f"></i></a>
+                <Link className="btn btn-outline-light btn-floating m-1" to="#!" role="button"><i
+                        className="fab fa-facebook-f"></i></Link>
 
                 {/* Twitter */}
-                <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        className="fab fa-twitter"></i></a>
+                <Link className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        className="fab fa-twitter"></i></Link>
 
                 {/* Instagram */}
-                <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        className="fab fa-instagram"></i></a>
+                <Link className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        className="fab fa-instagram"></i></Link>
 
                 {/* Youtube */}
-                <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        className="fab fa-youtube"></i></a>
+                <Link className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        className="fab fa-youtube"></i></Link>
                 
                 {/* Tiktok */}
-                <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    className="fab fa-tiktok"></i></a>
+                <Link className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    className="fab fa-tiktok"></i></Link>
 
                    {/* Gmail */}
-                <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    className="fab fa-google"></i></a>   
+                <Link className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    className="fab fa-google"></i></Link>   
 
                 {/* What's app */}
-                <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                   className="fab fa-whatsapp"></i></a>
+                <Link className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                   className="fab fa-whatsapp"></i></Link>
             </section>
         </div>
     </footer>

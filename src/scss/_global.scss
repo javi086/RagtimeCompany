@@ -8,6 +8,7 @@ $mandatory: red;
 /** Quitando espacios*/
 $remove_marging: 0 0 0 0;
 $remove_padding: 0 0 0 0;
+
 /***********************************************************************************************
                                          Body in all pages
 ************************************************************************************************/
@@ -93,12 +94,19 @@ h6 {
   line-height: 30px;
 }
 
-/*
-1. Forma correcta de importar una fuente?
-2. Forma de aplicar un texto o color a todos los partials sin repetirlo en cada sección?
-3. Revisar como afectar el menu desplegable
-4. Poner una image default en le body para cuando no haya una especifica se muestre la de default
-*/
+/***********************************************************************************************
+                                        Promotions
+************************************************************************************************/
+
+#promotionsPicture{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000; 
+  width:10%;
+  height:auto;
+}
+
 
 /***********************************************************************************************
                                           Media querys

@@ -1,6 +1,5 @@
 @charset "UTF-8";
 #main_header {
-  position: fixed;
   margin: 0;
   z-index: 1;
   top: 0;
@@ -119,12 +118,18 @@ h6, #main_header #brand_name {
   line-height: 30px;
 }
 
-/*
-1. Forma correcta de importar una fuente?
-2. Forma de aplicar un texto o color a todos los partials sin repetirlo en cada sección?
-3. Revisar como afectar el menu desplegable
-4. Poner una image default en le body para cuando no haya una especifica se muestre la de default
-*/
+/***********************************************************************************************
+                                        Promotions
+************************************************************************************************/
+#promotionsPicture {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+  width: 10%;
+  height: auto;
+}
+
 /***********************************************************************************************
                                           Media querys
 ************************************************************************************************/
@@ -275,14 +280,14 @@ h6, #main_header #brand_name {
   border: solid 2px blueviolet;
 }
 
-#registration_form {
+#registrationForm {
   border: solid 2px white;
   margin-top: 45px;
 }
-#registration_form div {
+#registrationForm div {
   margin-bottom: 8px;
 }
-#registration_form #message_area {
+#registrationForm #message_area {
   height: 100px;
 }
 
@@ -290,10 +295,6 @@ table, th, td {
   border: 1px solid white;
   text-align: center;
   color: white;
-}
-
-.general_shadow.shadow {
-  border: 5px solid salmon;
 }
 
 .hidden_message_format {

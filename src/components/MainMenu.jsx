@@ -21,9 +21,9 @@ function MainMenu(){
                           <li className="nav-item dropdown">
                               <Link className="nav-link" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Actividades</Link> 
                               <ul className="dropdown-menu">
-                                  <li><Link className="dropdown-item" to="#">Clases abiertas.</Link> </li>
-                                  <li><Link className="dropdown-item" to="#">Entrenamiento compañia.</Link> </li>
-                                  <li><Link className="dropdown-item" to="#">Eventos especiales.</Link> </li>
+                                  <li><Link className="dropdown-item" to="/clasesAbiertas">Clases abiertas.</Link> </li>
+                                  <li><Link className="dropdown-item" to="/Training">Entrenamiento compañia.</Link> </li>
+                                  <li><Link className="dropdown-item" to="/Eventos">Eventos especiales.</Link> </li>
                               </ul>
                           </li>
                           <li className="nav-item">
@@ -33,7 +33,7 @@ function MainMenu(){
                               <Link className="nav-link" to="/registration" role="button">Registrate</Link> 
                           </li>
                           <li className="nav-item">
-                              <Link className="nav-link" to="#" role="button">Login</Link> 
+                              <Link className="nav-link" to="/login" role="button">Login</Link> 
                           </li>
                       </ul>
                   </div>

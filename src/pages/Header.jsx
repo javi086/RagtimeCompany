@@ -5,7 +5,7 @@ import MainMenu from "../components/MainMenu";
 
 function Header(){
     return(
-      <header id="main_header" className="container-fluid col-md-12">
+      <header id="main_header" className="container-fluid col-md-12" data-testid="header">
       <div className="row bg-dark">
           <CompanyBrand></CompanyBrand>
           <Tips></Tips>

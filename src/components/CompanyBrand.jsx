@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function CompanyBrand(){
     return(
-        <div className="col-lg-3 col-md-3">
+        <div className="col-lg-3 col-md-3" data-testid="brand">
               <nav className="navbar navbar-dark">
                   <Link className="navbar-brand" to="/" id="brand_name">
                       <h5>Ragtime</h5>
