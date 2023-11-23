@@ -1,19 +1,18 @@
 footer {
-    background-color: #66347F;
-    height: 50px;
+    height: 85px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
     
-
-    .container {
-        .footer_media {
-            margin: 10px 0;
-        }
-
-    }
+.container > #socialMedia{
+    border-bottom: dotted white 2px;
+    margin: 2px;
+    padding-bottom: 5px;
+}
    
-    #sub_footer {
-        background-color: rgb(80, 3, 80);
-        padding: 10px;
-
+.container > #subFooter {
+        margin: 2px;
         h5,
         h6 {
             display: inline;

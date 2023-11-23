@@ -13,12 +13,17 @@ $remove_padding: 0 0 0 0;
                                          Body in all pages
 ************************************************************************************************/
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    background-image: url("../images/wallpapers/general.jpg");
-    background-attachment: fixed;/* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
-   /* background-size: cover; /* The MOST important part, this is what makes the background image rescale based on the container’s size */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-image: url("../images/wallpapers/general.jpg");
+  background-attachment: fixed;
+  /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
+  /*background-size: cover; /* The MOST important part, this is what makes the background image rescale based on the container’s size */
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
 }
 /***********************************************************************************************
                                          Placeholders

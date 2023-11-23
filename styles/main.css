@@ -3,7 +3,6 @@
   margin: 0;
   z-index: 1;
   top: 0;
-  border: solid red 2px;
 }
 #main_header #brand_name h5,
 #main_header #brand_name h6 {
@@ -24,18 +23,21 @@
 }
 
 footer {
-  background-color: #66347F;
-  height: 50px;
+  height: 85px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
-footer .container .footer_media {
-  margin: 10px 0;
+footer .container > #socialMedia {
+  border-bottom: dotted white 2px;
+  margin: 2px;
+  padding-bottom: 5px;
 }
-footer #sub_footer {
-  background-color: rgb(80, 3, 80);
-  padding: 10px;
+footer .container > #subFooter {
+  margin: 2px;
 }
-footer #sub_footer h5,
-footer #sub_footer h6 {
+footer .container > #subFooter h5,
+footer .container > #subFooter h6 {
   display: inline;
 }
 
@@ -50,8 +52,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   background-image: url("../images/wallpapers/general.jpg");
-  background-attachment: fixed; /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
-  /* background-size: cover; /* The MOST important part, this is what makes the background image rescale based on the container’s size */
+  background-attachment: fixed;
+  /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
+  /*background-size: cover; /* The MOST important part, this is what makes the background image rescale based on the container’s size */
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
 }
 
 /***********************************************************************************************
@@ -183,6 +190,7 @@ h6, #main_header #brand_name {
 #introduction_section {
   background-image: url("../images/wallpapers/scenario4.jpeg");
   text-align: center;
+  padding-bottom: 85px;
 }
 #introduction_section img {
   width: 40%;
