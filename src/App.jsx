@@ -3,7 +3,6 @@ import Header from "./pages/Header";
 import Footer from "./pages/Footer";
 import RegistrationForm from "./pages/RegistrationForm";
 import Introduction from "./pages/Introduction";
-import Contact from "./pages/Contact";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import Promotions from "./components/Promotions";

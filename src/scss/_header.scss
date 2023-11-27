@@ -1,15 +1,10 @@
-#main_header {
+#mainHeader {
     margin: 0;
     @extend %general_text;
     z-index: 1;
     top: 0;
-    
-    
 
-
-
-    #brand_name {
-        @extend %ragtime_font;
+    #brandName {
         h5,
         h6 {
             display: inline;
@@ -34,6 +29,7 @@
         margin: 0;
         padding: 17px 0 0 0;
         @extend %general_text;
+        color: white;
     }
 
 }
