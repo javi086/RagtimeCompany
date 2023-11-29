@@ -1,24 +1,25 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
+import { Col } from "react-bootstrap";
 
 
 
 function Tips(){
     return (
-        
-            <Carousel>
-                <Carousel.Item interval={1000}>
+        <Col lg={"5"} style={{border:"green solid 2px"}}>
+            <Carousel slide={false}>
+                <Carousel.Item>
                     <Carousel.Caption>
                     <p>"Esto sera una frase o pensamiento definidio por los couchs de la compañia, para mostrar al publico".....</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval={1000}>
+                <Carousel.Item>
                     <Carousel.Caption>
                     <p>"bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla".</p>
                     </Carousel.Caption>
                 </Carousel.Item >
             </Carousel>
-      
+        </Col>
 
         /*
      <div className="col-lg-5 col-md-9">

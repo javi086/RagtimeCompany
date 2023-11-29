@@ -1,20 +1,13 @@
-#mainHeader {
-    margin: 0;
+
+#navBar {
     @extend %general_text;
-    z-index: 1;
-    top: 0;
-
-    #brandName {
-        h5,
-        h6 {
-            display: inline;
-            color: gold;
-
-        }
+    
+    .brandName{
+        @extend %brandNameFormat;
     }
 
-    nav {
-        a:hover {
+    Nav {
+        NavDropdown.Item:hover {
             background-color: #66347F;
         }
 

@@ -1,3 +1,23 @@
+/***********************************************************************************************
+                                         Body in all pages
+************************************************************************************************/
+*{
+  color:white;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-image: url("../images/wallpapers/general.jpg");
+  background-attachment: fixed;
+  /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
+  /*background-size: cover; /* The MOST important part, this is what makes the background image rescale based on the container’s size */
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+}
+
+
 /** Colores variables */
 $white: #fff;
 /** Fuentes */
@@ -9,22 +29,32 @@ $mandatory: red;
 $remove_marging: 0 0 0 0;
 $remove_padding: 0 0 0 0;
 
-/***********************************************************************************************
-                                         Body in all pages
-************************************************************************************************/
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  background-image: url("../images/wallpapers/general.jpg");
-  background-attachment: fixed;
-  /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
-  /*background-size: cover; /* The MOST important part, this is what makes the background image rescale based on the container’s size */
-  margin: 0;
+/* Apply a CSS reset or remove default margins/paddings */
+.custom-header,
+.custom-main,
+.custom-footer {
+  margin: 10px;
   padding: 0;
-  position: relative;
-  min-height: 100vh;
+  box-sizing: border-box;
 }
+
+/* Set heights explicitly */
+.custom-header {
+  border: red 2px solid;
+}
+
+.custom-main {
+  border: yellow 2px solid;
+  height: 100%; /* Ensure it takes full viewport height */
+}
+
+.custom-footer {
+  border: greenyellow 2px solid;
+  position: static;
+}
+
+
+
 /***********************************************************************************************
                                          Placeholders
 ************************************************************************************************/
@@ -56,6 +86,12 @@ body {
   height: 100%;
 }
 
+%brandNameFormat{
+   *{
+    display: inline;
+    color: gold;
+}
+}
 /***********************************************************************************************
                                             Titles & subtitles
 ************************************************************************************************/
@@ -68,14 +104,14 @@ h6 {
   @extend %ragtime_font;
 }
 
-%section_titles_format {
+%sectionTitlesFormat {
   padding: 0 0 0 5%;
   h2 {
     line-height: 2px;
   }
 }
 
-.subtitles{
+%subtitlesFormat{
     margin: 0 0 5% 0;
 }
 
@@ -83,7 +119,7 @@ h6 {
                                            Sections and subsections
 ************************************************************************************************/
 
-%sections_format {
+%sectionsFormat {
   align-items: center;
   display: flex;
   height: 100vh;
@@ -94,9 +130,10 @@ h6 {
   background-size: 99% 98%; //Jugando con la dimensión de la imagen con respecto a el contenerdor que ocupa height:100vh
 }
 
-%subsections_format{
+%subsectionsFormat{
   padding:5%;
   line-height: 30px;
+  border: solid 2px white;
 }
 
 /***********************************************************************************************

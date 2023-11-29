@@ -1,13 +1,16 @@
  /******************************* Commons Section ***********************/
  .sections {
-   @extend %sections_format;
+   @extend %sectionsFormat;
  }
  .subsections{
-  @extend %subsections_format;
+  @extend %subsectionsFormat;
  }
 
- .section_titles {
-   @extend %section_titles_format;
+ .sectionTitles {
+   @extend %sectionTitlesFormat;
+ }
+ .subTitles{
+  @extend %subtitlesFormat;
  }
 
 
@@ -31,13 +34,13 @@
 
  /******************************* MeetUs Section ***********************/
 
- #meetUs_section {
+ #aboutUsSection {
    background-image: url("../images/wallpapers/ac4.jpeg");
 
  }
 
 
- #aboutUs_option {
+ #aboutUsOption {
    img {
      border-radius: 100%;
      width: 60%;
@@ -55,7 +58,7 @@
 
  /******************************* Founders Section ***********************/
 
- #founders_section {
+ #foundersSection {
    background-image: url("../images/wallpapers/founders_section.jpeg");
  }
 
@@ -76,7 +79,7 @@ div{
   }
  }
 /******************************* Dancers Section ***********************/
- #dancers_section{
+ #dancersSection{
   background-image: url("../images/wallpapers/dancers_section.jpeg");
 
   } 
@@ -93,7 +96,7 @@ div{
     display: inline;
     margin: 10px 0;
     }
-    .dancers_space{
+    .dancersSpace{
       margin: 25px 0;
       padding: 0;
       div{
@@ -108,9 +111,32 @@ div{
       } 
 
   }
+     /***********************************************************************************************
+                                        Activities 
+************************************************************************************************/
+
+#openClassesSection{
+  background-image: url("../images/wallpapers/clases_abiertas.jpeg");
+} 
+/*---------Clase de bachata-------*/
+
+#openClasses img{
+width: 90%;
+height: auto;
+border-radius: 10%;
+}
+#openClasses .hr{
+margin: 4% 0;
+}
+
+
+/*---------Entrenamiento Compañia-------*/
+#companyTrainingSection{
+background-image: url("../images/compañia.jpg");
+}
 
     /***********************************************************************************************
-                                         Menu Contactanos
+                                      Contact
 ************************************************************************************************/
 #contact_section{
   border: solide red 2px;

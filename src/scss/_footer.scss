@@ -4,19 +4,16 @@ footer {
     bottom: 0;
     width: 100%;
 
-    
-.container > #socialMedia{
-    border-bottom: dotted white 2px;
-    margin: 2px;
-    padding-bottom: 5px;
-}
-   
-.container > #subFooter {
+    #socialMedia {
+        border-bottom: dotted white 2px;
         margin: 2px;
-        h5,
-        h6 {
-            display: inline;
-        }
+        padding-bottom: 5px;
+    }
+
+    .brandName {
+        margin: 2px;
+        @extend %brandNameFormat;
+
     }
 
 }
