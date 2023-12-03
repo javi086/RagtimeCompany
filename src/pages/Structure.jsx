@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import Carousel from 'react-bootstrap/Carousel';
 
 function Structure() {
     return (
@@ -26,15 +26,22 @@ function Structure() {
                     </Row>
                 </Container>
 
-                <Container fluid as="div" className="subsections" id="aboutUsOption">
-                <h1>Subtitloeeeeeeee</h1>
+                <Container fluid as="div">
+                
+                        <Carousel controls={false} indicators={false}>
+                            <Carousel.Item>
+                                <h3>First slide label</h3>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <h3>First slide label</h3>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </Carousel.Item>
+                    </Carousel>
                 </Container>
-
             </Container>
 
-            <Container fluid as="footer" className="custom-footer text-center" data-testid="footer">
-                <h1>FOOTEDDDDDDR</h1>
-            </Container>
+            
         </>
 
 

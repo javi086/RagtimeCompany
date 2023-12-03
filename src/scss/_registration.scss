@@ -9,33 +9,12 @@
         height: 100px;
     }
 
+    .ragtimeButton{
+        @extend %ragtimeButtonFormat;
+    }
+
 }
 
-table, th, td {
-    border: 1px solid white;
-   text-align: center;
-    color: white;
-    
-  }
 
 
 
-.hidden_message_format {
-    visibility: hidden; 
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    background-color: palevioletred;
-    width: 200px;
-  
-}
-
-.hidden_message_format.show_message {
-    visibility: visible;
-}
-.mandatory_field{
-    color: $mandatory;
-}

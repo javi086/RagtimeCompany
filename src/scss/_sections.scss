@@ -2,7 +2,7 @@
  .sections {
    @extend %sectionsFormat;
  }
- .subsections{
+ .subSections{
   @extend %subsectionsFormat;
  }
 
@@ -132,28 +132,10 @@ margin: 4% 0;
 
 /*---------Entrenamiento Compañia-------*/
 #companyTrainingSection{
-background-image: url("../images/compañia.jpg");
+background-image: url("../images/wallpapers/compañia.jpg");
 }
 
-    /***********************************************************************************************
-                                      Contact
-************************************************************************************************/
-#contact_section{
-  border: solide red 2px;
-}
 
-#location{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-    border: solid 3px red;
-  
-}
-
-.responsive_iframe{
- @extend %responsive-iframe;
-}
 
 
     /***********************************************************************************************

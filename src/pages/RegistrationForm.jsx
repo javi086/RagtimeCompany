@@ -2,24 +2,6 @@ import React, { useEffect, useState } from "react";
 import BasicUserInformation from "../components/BasicUserInformation";
 import AdditionalUserInformation from "../components/AdditionalUserInformation";
 import useEmptyInputStyle from "../components/hooks/useEmptyInputStyle";
-import styled from 'styled-components';
-
-
-// styled button component
-const Button = styled.button`
-  background-color: #66347F;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease-in-out;
-
-  &:hover {
-    background-color:#EAE509;
-  }
-`;
 
 function RegistrationForm() {
   const [userInfo, setUserInfo] = useState({
@@ -30,7 +12,7 @@ function RegistrationForm() {
     sex:"",
   });
 
-  const [formValid, setFormValid] = useState(false);
+ const [formValid, setFormValid] = useState(false);
  const emptyInputs=useEmptyInputStyle(userInfo);
 
 
@@ -59,8 +41,6 @@ function RegistrationForm() {
    }
 
 
-
-
   }
 
   return (
@@ -77,7 +57,7 @@ function RegistrationForm() {
             handleInputChange={handleInputChange}
           ></AdditionalUserInformation>
          {error}
-          <Button type="submit" data-testid="submitButton">Registrar</Button>
+          <button type="submit" data-testid="submitButton" className="ragtimeButton">Registrar</button>
         </div>
       </form>
     </>

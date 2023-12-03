@@ -1,28 +1,31 @@
+#ragtimeHeader{
+    margin: 10px 0;
+    padding: 0;
+    border: gold 2px double;
+    height:auto;
 
-#navBar {
+#ragtimeNavBar {
     @extend %general_text;
+    height:auto;
+    padding: 0;
     
     .brandName{
         @extend %brandNameFormat;
     }
 
-    Nav {
-        NavDropdown.Item:hover {
-            background-color: #66347F;
-        }
-
-        .dropdown-item:hover {
-            background-color: #EAE509;
-        }
+  & .mainMenuOptions{
+    justify-content: end;
     }
-
+    
     #tips {
         font-size: 13px;
-        text-align: center;
-        margin: 0;
-        padding: 17px 0 0 0;
         @extend %general_text;
         color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
 
+}
 }

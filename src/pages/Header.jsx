@@ -6,9 +6,9 @@ import MainMenu from "../components/MainMenu";
 
 function Header(){
     return(
-    <Container fluid as="header" className="custom-header">
-        <Navbar collapseOnSelect expand="lg" data-testid="header" id="navBar" data-bs-theme="dark" style={{border: "white solid 3px"}}>
-            <Container fluid  className="bg-dark"   style={{border: "blue 2px solid", padding:"0"}}>
+    <Container fluid as="header" id="ragtimeHeader">
+        <Navbar collapseOnSelect expand="lg" data-testid="header" id="ragtimeNavBar" data-bs-theme="dark">
+            <Container fluid  as="div" className="bg-dark">
                 <Row className="w-100">
                   <CompanyBrand></CompanyBrand>
                   <Tips></Tips>

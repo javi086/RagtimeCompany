@@ -6,17 +6,13 @@ import { Col } from "react-bootstrap";
 
 function Tips(){
     return (
-        <Col lg={"5"} style={{border:"green solid 2px"}}>
-            <Carousel slide={false}>
+        <Col lg={"6"} id="tips">
+            <Carousel slide={true} controls={false} indicators={false} >
                 <Carousel.Item>
-                    <Carousel.Caption>
-                    <p>"Esto sera una frase o pensamiento definidio por los couchs de la compañia, para mostrar al publico".....</p>
-                    </Carousel.Caption>
+                    <p>"Esto sera una frase o pensamiento definidio por los couchs de la compañia, para mostrar al publico etc etc etc etc".....</p>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Carousel.Caption>
-                    <p>"bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla".</p>
-                    </Carousel.Caption>
+                    <p>"bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla".</p>
                 </Carousel.Item >
             </Carousel>
         </Col>

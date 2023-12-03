@@ -3,13 +3,13 @@ import { Navbar, Col, Nav } from "react-bootstrap";
 
 function CompanyBrand(){
     return(
-        <Col lg={"3"}>
-            <Navbar.Brand>
+        <Col lg={"2"}>
+            <Nav>
                 <Nav.Link href="/" className="brandName">
                     <h2>Ragtime</h2>
                     <h4>Company</h4>
                 </Nav.Link>
-            </Navbar.Brand>
+            </Nav>
         </Col>
         /*
         <div className="col-lg-3 col-md-3" >

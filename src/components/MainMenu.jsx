@@ -1,26 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Col, Nav, NavDropdown, Navbar } from "react-bootstrap";
 
 function MainMenu() {
     return (
         <Col lg={4}>
             <Nav>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Toggle aria-controls="ragtimeNavBarController" />
+                <Navbar.Collapse id="ragtimeNavBarController" className="mainMenuOptions">
                     <Nav>
-                        <NavDropdown title="Conocenos" id="basic-nav-dropdown">
+                        <NavDropdown title="Conocenos">
                             <NavDropdown.Item href="/aboutUs">Acerca de nosotros</NavDropdown.Item>
                             <NavDropdown.Item href="/founders">Fundadores</NavDropdown.Item>
                             <NavDropdown.Item href="/dancers">Bailarines</NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown title="Actividades" id="basic-nav-dropdown">
+                        <NavDropdown title="Actividades">
                             <NavDropdown.Item href="/openClasses">Clases abiertas</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Entrenamiento compañia</NavDropdown.Item>
+                            <NavDropdown.Item href="/trainingCompany">Entrenamiento compañia</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Eventos especiales</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="/contact">Contacto</Nav.Link>
-                        <Nav.Link href="/registro">Registro</Nav.Link>
+                        <Nav.Link href="/registration">Registro</Nav.Link>
                         <Nav.Link href="/structure">Ingresar</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

@@ -3,7 +3,6 @@ import React from "react";
 function BasicUserInformation({ userInfo, handleInputChange, emptyInputs }) {
   const inputStyle = {
     border: '4px solid red',
-
   };
   return (
     <>
@@ -34,8 +33,7 @@ function BasicUserInformation({ userInfo, handleInputChange, emptyInputs }) {
       <div className="row">
         <label
           htmlFor="formGroupExampleInput"
-          className="col-sm-2 col-form-label"
-        >
+          className="col-sm-2 col-form-label" >
           <b className="mandatory_field">*</b>
           Apellido Paterno:
         </label>

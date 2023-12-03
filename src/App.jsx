@@ -6,6 +6,8 @@ import AboutUs from "./pages/AboutUs";
 import Founders from "./pages/Founders";
 import Dancers from "./pages/Dancers";
 import OpenClasses from "./pages/OpenClasses";
+import TrainingCompany from "./pages/TrainingCompany";
+import Contact from "./pages/Contact";
 import RegistrationForm from "./pages/RegistrationForm";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NotFound from "./pages/NotFound";
@@ -30,8 +32,12 @@ function App() {
        
        {/* Menu "Actividades" option */}
         <Route path="/openClasses" element={<OpenClasses></OpenClasses>}></Route>
+        <Route path="/trainingCompany" element={<TrainingCompany></TrainingCompany>}></Route>
 
-        <Route path="/registro" element={<RegistrationForm></RegistrationForm>}></Route>
+       {/* Menu "Contacto" option */}
+       <Route path="/contact" element={<Contact></Contact>}></Route>
+
+        <Route path="/registration" element={<RegistrationForm></RegistrationForm>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
         <Route path="/structure" element={<Structure></Structure>}></Route>
