@@ -12,13 +12,15 @@ function MainMenu() {
                             <NavDropdown.Item href="/aboutUs">Acerca de nosotros</NavDropdown.Item>
                             <NavDropdown.Item href="/founders">Fundadores</NavDropdown.Item>
                             <NavDropdown.Item href="/dancers">Bailarines</NavDropdown.Item>
+                            <NavDropdown.Item href="/contact">Contacto</NavDropdown.Item>
+
                         </NavDropdown>
                         <NavDropdown title="Actividades">
                             <NavDropdown.Item href="/openClasses">Clases abiertas</NavDropdown.Item>
                             <NavDropdown.Item href="/trainingCompany">Entrenamiento compañia</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Eventos especiales</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="/contact">Contacto</Nav.Link>
+                        <Nav.Link href="/events">Eventos</Nav.Link>
                         <Nav.Link href="/registration">Registro</Nav.Link>
                         <Nav.Link href="/structure">Ingresar</Nav.Link>
                     </Nav>

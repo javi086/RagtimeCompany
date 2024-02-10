@@ -10,7 +10,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest",
-    "start": "concurrently \"npm run watch\" \"npm run dev\""
+    "start": "concurrently \"npm run watch\" \"npm run dev\"" 
   },
   "repository": {
     "type": "git",

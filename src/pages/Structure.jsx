@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import Carousel from 'react-bootstrap/Carousel';
+import Card from 'react-bootstrap/Card';
 
 function Structure() {
     return (
@@ -27,7 +28,17 @@ function Structure() {
                 </Container>
 
                 <Container fluid as="div">
-                
+                <Card bg='dark' border="primary" style={{ width: '18rem' }}>
+                                    <Card.Img variant="top" src="images/members/itza.jpeg" alt="Ragtime-member" />
+                                    <Card.Body>
+                                        <Card.Title>Itzayana algo algo - Itza</Card.Title>
+                                        <Card.Text>
+                                            "Me gustan las galletas oreo, chockis y el Whisky  (con galletas) dasdadsdsadasdasd asdasdsdasd dasdas".
+                                        </Card.Text>
+                                    </Card.Body>
+                 </Card>
+
+
                         <Carousel controls={false} indicators={false}>
                             <Carousel.Item>
                                 <h3>First slide label</h3>
