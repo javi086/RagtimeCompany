@@ -10,38 +10,40 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/api/v1/events")
 public class EventController {
     @Autowired
     private EventService eventService;
-    /*
 
-    //En este controlador si le meto un Modelo en la parte de los argumentos es el objeto que usa Spring MVC para pasar todos los datos a la vista( lo que tiene Index )
-    @GetMapping("/")
-    public String index(Model model){
-        model.addAttribute("events", eventService.getAllEvents()); //Mando los objetos que se encuentren en getAllEvents
-        return "index";
-    }
-
-    //@ModelAttribute me permite recibir el tipo de objeto que se recibe de la pagina html(index)
-    @PostMapping("/create")
-    public String createEvent(@ModelAttribute Event newEvent){
-        eventService.createEvent(newEvent);
-        return "redirect:/";//Nos ayuda a renderisar la seccion de eventos agendados redirigiendo el flujo a @GetMapping("/")
-    }
-
-*/
 
     @GetMapping("/")
-    public Iterable<Event> getEvents(){
+    public Iterable<Event> getEvents() {
         return eventService.getEvents();
     }
-
-    @PostMapping("/addEvent")
-    public void addEvent(Event event){
-        eventService.createEvent(event);
+    @GetMapping("/getEventById/{id}")
+    public ResponseEntity<Event> getEventsById(@PathVariable Long id) {
+        return  ResponseEntity.ok(eventService.getEventById(id));
     }
+    @PostMapping("/addEvent")
+    public Event addEvent(@RequestBody Event newEvent) {
+        return eventService.createEvent(newEvent);
+    }
+
+
+    @PutMapping("/updateEventById/{id}")
+    public ResponseEntity<Event> updateEvent(@PathVariable Long id, @RequestBody Event updatedEvent){
+
+         return ResponseEntity.ok(eventService.updateEvent(id, updatedEvent));
+
+    }
+
+    @DeleteMapping("/deleteEventById/{id}")
+    public ResponseEntity<Map<String, Boolean>> deleteEventById(@PathVariable Long id){
+        return  ResponseEntity.ok(eventService.deleteEvent(id));
+    }
+
 
 
 
