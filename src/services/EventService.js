@@ -1,6 +1,6 @@
 import axios from "axios";
 
-
+//Este const podria ir en una carpeta separada o mas avanzado en la BD por temas de seguridad
 const EVENT_BASE_REST_API_URL = "http://localhost:8080/api/v1/events";
 
 class EventService{
