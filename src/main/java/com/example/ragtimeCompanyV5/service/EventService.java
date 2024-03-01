@@ -24,11 +24,19 @@ public class EventService {
     public Event getEventById(Long id){
         return eventRepository.findById(id).orElseThrow(()-> new ResourceNotFoundException("El evento con ese ID no existe: " + id));
     }
+
+    public Event getEventByName(String eventName) {
+        if (eventName == null) {
+            throw new IllegalArgumentException("Event name cannot be null");
+        }
+
+        return eventRepository.findEvenByName(eventName)
+                .orElseThrow(() -> new ResourceNotFoundException("Event not found with name: " + eventName));
+
+    }
     public Event createEvent(Event event){
     return  eventRepository.save(event);
     }
-
-
 
     public Map<String, Boolean> deleteEvent(Long id){
         eventRepository.deleteById(id);
@@ -37,8 +45,6 @@ public class EventService {
         return confirmation;
 
     }
-
-
     public Event updateEvent(Long id, Event updatedEvent){
       Optional<Event> existingEvent = eventRepository.findById(id);
       if(existingEvent.isPresent()){
@@ -49,8 +55,8 @@ public class EventService {
          eventToBeUpdated.setEndDate(updatedEvent.getEndDate());
          eventRepository.save(eventToBeUpdated);
          return eventToBeUpdated;
-      }else{
-          throw new ResourceNotFoundException("El evento con ese ID no existe: " +id);
+      }else {
+          throw new ResourceNotFoundException("El evento con ese ID no existe: " + id);
       }
 
 }
