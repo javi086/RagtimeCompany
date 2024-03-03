@@ -16,6 +16,10 @@ class EventService{
         return axios.get(EVENT_BASE_REST_API_URL + '/getEventById/' + eventId);
     }
 
+    getEventByName(eventName){
+        return axios.get(EVENT_BASE_REST_API_URL + '/getEventByName?eventName=' +eventName)
+    }
+
     updateEventById(eventId, eventUpdated){
         return axios.put(EVENT_BASE_REST_API_URL + '/updateEventById/'+ eventId, eventUpdated);
     }
