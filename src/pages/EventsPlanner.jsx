@@ -37,7 +37,6 @@ function EventsPlanner() {
     startDate: "",
     endDate: ""
   });
-  console.log("Esto vale " + eventInfo.name)
 
   const [isRendered, setIsRendered] = useState(false);
   const addEvent = (e) => {
@@ -82,6 +81,7 @@ function EventsPlanner() {
     EventService.updateEventById(eventId, eventInfo).then(response => {
       console.log(response.data);
     }).catch(error => { console.log(error) })
+    
     console.log("Event successfully updated with Id: " + eventId);
 
   };
