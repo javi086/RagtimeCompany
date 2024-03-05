@@ -81,7 +81,6 @@ public class EventRestControlerTest {
         Map<String, Boolean> expectedConfirmation = new HashMap<>();
         expectedConfirmation.put("Evento eliminado correctamente", Boolean.TRUE);
 
-
         when(eventService.deleteEvent(eventId)).thenReturn(expectedConfirmation);
         ResponseEntity<Map<String, Boolean>> returnedConfirmation = eventController.deleteEventById(eventId);
         Map<String, Boolean> actualConfirmationMap = returnedConfirmation.getBody();
