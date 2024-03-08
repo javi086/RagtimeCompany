@@ -19,7 +19,7 @@ public class EventController {
     @Autowired
     private EventService eventService;
 
-
+//comentario de pruega git
     @GetMapping("/")
     public Iterable<Event> getEvents() {
         return eventService.getEvents();
