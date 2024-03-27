@@ -32,7 +32,7 @@
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
-    "babel": "^6.23.0",
+    //"babel": "^6.23.0",
     "concurrently": "^8.2.2",
     "eslint": "^8.45.0",
     "eslint-plugin-react": "^7.32.2",
@@ -43,7 +43,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "sass": "^1.66.1",
     "vite": "^4.4.5",
-    "whatwg-fetch": "^3.6.19"
+    //"whatwg-fetch": "^3.6.19"
   },
   "dependencies": {
     "axios": "^1.6.7",
