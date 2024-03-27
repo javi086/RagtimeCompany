@@ -1,0 +1,20 @@
+#registrationForm{
+    border: solid 2px white;
+    margin-top: 45px;
+
+    div{
+        margin-bottom: 8px;
+    }
+    #message_area{
+        height: 100px;
+    }
+
+    .ragtimeButton{
+        @extend %ragtimeButtonFormat;
+    }
+
+}
+
+
+
+

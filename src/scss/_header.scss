@@ -1,0 +1,31 @@
+#ragtimeHeader{
+    margin: 10px 0;
+    padding: 0;
+    border: gold 2px double;
+    height:auto;
+
+#ragtimeNavBar {
+    @extend %general_text;
+    height:auto;
+    padding: 0;
+    
+    .brandName{
+        @extend %brandNameFormat;
+    }
+
+  & .mainMenuOptions{
+    justify-content: end;
+    }
+    
+    #tips {
+        font-size: 13px;
+        @extend %general_text;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+}
+}

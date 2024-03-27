@@ -1,5 +1,7 @@
 /**Main function and first in be executed*/
 /**Gotten user information */
+
+
 function getUserInformation() {
     const name = document.getElementById("name").value;
     const paternal_name = document.getElementById("paternal_name").value;
@@ -113,5 +115,3 @@ for (let i = 0; i <= elements.length; i++) {
         elements[i].classList.remove("shadow");
     })
 }
-
-console.log("holaaa");

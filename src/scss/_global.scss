@@ -1,3 +1,21 @@
+/***********************************************************************************************
+                                         Body in all pages
+************************************************************************************************/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-image: url("../images/wallpapers/general.jpg");
+  background-attachment: fixed;
+  /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
+  /*background-size: cover; /* The MOST important part, this is what makes the background image rescale based on the container’s size */
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+}
+
+
 /** Colores variables */
 $white: #fff;
 /** Fuentes */
@@ -8,17 +26,31 @@ $mandatory: red;
 /** Quitando espacios*/
 $remove_marging: 0 0 0 0;
 $remove_padding: 0 0 0 0;
+
+
+/* Apply a CSS reset or remove default margins/paddings */
+
+.custom-main,
+.custom-footer {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.custom-main {
+  border: yellow 2px solid;
+  height: 100%; /* Ensure it takes full viewport height */
+}
+
+.custom-footer {
+  border: greenyellow 2px solid;
+  position: static;
+}
 /***********************************************************************************************
-                                         Body in all pages
+                                         Show and & Hide
 ************************************************************************************************/
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    background-image: url("../images/wallpapers/general.jpg");
-    background-attachment: fixed;/* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
-   /* background-size: cover; /* The MOST important part, this is what makes the background image rescale based on the container’s size */
-}
+
 /***********************************************************************************************
                                          Placeholders
 ************************************************************************************************/
@@ -40,7 +72,7 @@ body{
   font-family: "kombatFont";
 }
 
-%responsive-iframe {
+%responsiveIframeFormat {
   position: absolute;
   top: 0;
   left: 0;
@@ -50,6 +82,28 @@ body{
   height: 100%;
 }
 
+%brandNameFormat{
+   *{
+    display: inline;
+    color: gold;
+}
+}
+
+%ragtimeButtonFormat{
+  background-color: #66347F;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color:#EAE509;
+  }
+}
 /***********************************************************************************************
                                             Titles & subtitles
 ************************************************************************************************/
@@ -62,22 +116,22 @@ h6 {
   @extend %ragtime_font;
 }
 
-%section_titles_format {
+%sectionTitlesFormat {
   padding: 0 0 0 5%;
   h2 {
     line-height: 2px;
   }
 }
 
-.subtitles{
-    margin: 0 0 5% 0;
+%subtitlesFormat{
+    margin: 0 0 2% 0;
 }
 
 /***********************************************************************************************
                                            Sections and subsections
 ************************************************************************************************/
 
-%sections_format {
+%sectionsFormat {
   align-items: center;
   display: flex;
   height: 100vh;
@@ -88,17 +142,33 @@ h6 {
   background-size: 99% 98%; //Jugando con la dimensión de la imagen con respecto a el contenerdor que ocupa height:100vh
 }
 
-%subsections_format{
-  padding:5%;
+%subsectionsFormat{
+  padding:2%;
   line-height: 30px;
+  border: solid 2px white;
 }
 
-/*
-1. Forma correcta de importar una fuente?
-2. Forma de aplicar un texto o color a todos los partials sin repetirlo en cada sección?
-3. Revisar como afectar el menu desplegable
-4. Poner una image default en le body para cuando no haya una especifica se muestre la de default
-*/
+/***********************************************************************************************
+                                        Promotions
+************************************************************************************************/
+
+#promotionsPicture{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000; 
+  width:10%;
+  height:auto;
+}
+
+
+/***********************************************************************************************
+                                          Mandatory fields
+************************************************************************************************/
+%generalMandatoryFieldStyle{
+  border: 2 solid salmon;
+}
+
 
 /***********************************************************************************************
                                           Media querys

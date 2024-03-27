@@ -1,0 +1,12 @@
+.mandatoryField {
+  @extend %generalMandatoryFieldStyle;
+}
+
+
+.showMe{
+    display: block;
+  }
+
+  .hideMe {
+    display: none;
+}

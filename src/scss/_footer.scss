@@ -1,0 +1,22 @@
+footer {
+    height: 85px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    
+
+    #socialMedia {
+        border-bottom: dotted white 2px;
+        margin: 2px;
+        padding-bottom: 5px;
+    }
+
+    .brandName {
+        margin: 2px;
+        @extend %brandNameFormat;
+
+    }
+
+}

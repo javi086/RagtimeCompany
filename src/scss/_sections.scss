@@ -1,13 +1,16 @@
  /******************************* Commons Section ***********************/
  .sections {
-   @extend %sections_format;
+   @extend %sectionsFormat;
  }
- .subsections{
-  @extend %subsections_format;
+ .subSections{
+  @extend %subsectionsFormat;
  }
 
- .section_titles {
-   @extend %section_titles_format;
+ .sectionTitles {
+   @extend %sectionTitlesFormat;
+ }
+ .subTitles{
+  @extend %subtitlesFormat;
  }
 
 
@@ -15,6 +18,8 @@
  #introduction_section {
    background-image: url("../images/wallpapers/scenario4.jpeg");
    text-align: center;
+   padding-bottom:85px; //Asegura que el contenido nunca sea cubierto por el footer que mide 50px
+   
 
    img {
      width: 40%;
@@ -29,13 +34,13 @@
 
  /******************************* MeetUs Section ***********************/
 
- #meetUs_section {
+ #aboutUsSection {
    background-image: url("../images/wallpapers/ac4.jpeg");
 
  }
 
 
- #aboutUs_option {
+ #aboutUsOption {
    img {
      border-radius: 100%;
      width: 60%;
@@ -53,7 +58,7 @@
 
  /******************************* Founders Section ***********************/
 
- #founders_section {
+ #foundersSection {
    background-image: url("../images/wallpapers/founders_section.jpeg");
  }
 
@@ -74,7 +79,7 @@ div{
   }
  }
 /******************************* Dancers Section ***********************/
- #dancers_section{
+ #dancersSection{
   background-image: url("../images/wallpapers/dancers_section.jpeg");
 
   } 
@@ -91,7 +96,7 @@ div{
     display: inline;
     margin: 10px 0;
     }
-    .dancers_space{
+    .dancersSpace{
       margin: 25px 0;
       padding: 0;
       div{
@@ -106,26 +111,31 @@ div{
       } 
 
   }
-
-    /***********************************************************************************************
-                                         Menu Contactanos
+     /***********************************************************************************************
+                                        Activities 
 ************************************************************************************************/
-#contact_section{
-  background-image: url(../images/wallpapers/scenario2.jpeg);
+
+#openClassesSection{
+  background-image: url("../images/wallpapers/clases_abiertas.jpeg");
+} 
+/*---------Clase de bachata-------*/
+
+#openClasses img{
+width: 90%;
+height: auto;
+border-radius: 10%;
+}
+#openClasses .hr{
+margin: 4% 0;
 }
 
-#location{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-    border: solid 3px red;
-  
+
+/*---------Entrenamiento Compañia-------*/
+#companyTrainingSection{
+background-image: url("../images/wallpapers/compañia.jpg");
 }
 
-.responsive_iframe{
- @extend %responsive-iframe;
-}
+
 
 
     /***********************************************************************************************
@@ -133,5 +143,4 @@ div{
 ************************************************************************************************/
 #registration_section{
   border: solid 2px blueviolet;
-  margin-top: 100px;
 }
